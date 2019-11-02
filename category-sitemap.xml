@@ -7,15 +7,15 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/Hexo/</loc>
-        <lastmod>2019-11-02T04:59:50.599Z</lastmod>
+        <loc>http://yoursite-url/categories/Web-Crawling/</loc>
+        <lastmod>2019-11-02T11:29:02.422Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/Web-Crawling/</loc>
-        <lastmod>2019-11-02T11:16:13.701Z</lastmod>
+        <loc>http://yoursite-url/categories/Hexo/</loc>
+        <lastmod>2019-11-02T11:29:16.136Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
