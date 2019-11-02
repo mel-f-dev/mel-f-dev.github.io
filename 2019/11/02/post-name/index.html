@@ -236,9 +236,6 @@
 </ul>
 </li>
 </ul>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
 <h3><span id="beautifulsoup">BeautifulSoup</span></h3>
 <hr>
 <p>BeautifulSoup 라이브러리를 사용하기 위해 lxml을 설치 한다.</p>
@@ -248,43 +245,8 @@
 <li>아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install beautifulsoup4</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install beautifulsoup4</span><br></pre></td></tr></table></figure>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h6><span id="lxml">■ lxml</span></h6>
-<ul>
-<li>Beautifusoup에서 기본적으로 지원하는 파서보다 더 빠르게 동작하는 모듈.</li>
-<li>아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install lxml</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install lxml</span><br></pre></td></tr></table></figure>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h3><span id="코딩패턴">코딩패턴</span></h3>
-<hr>
-<ol>
-<li>BeautifulSoup 클래스 import</li>
-<li>BeautifulSoup 객체 생성</li>
-</ol>
-<ul>
-<li>생성시 조회할 문서 내용 전달</li>
-</ul>
-<ol start="3">
-<li>문서 내에서 필요한 정보 조회</li>
-</ol>
-<ul>
-<li>태그이름과 태그 속성으로 조회</li>
-<li>css selector를 이용해 조회</li>
-<li>.표기법을 이용한 탐색</li>
-</ul>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h3><span id="beautifulsoup-객체-생성">BeautifulSoup 객체 생성</span></h3>
-<hr>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BeautifulSoup(html str, [,파서])</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install beautifulsoup4</span><br><span class="line">```  </span><br><span class="line"><span class="comment">###### ■ lxml</span></span><br><span class="line">- Beautifusoup에서 기본적으로 지원하는 파서보다 더 빠르게 동작하는 모듈.</span><br><span class="line">- 아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</span><br><span class="line">```python</span><br><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install lxml</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install lxml</span><br><span class="line">```  </span><br><span class="line"><span class="comment">### 코딩패턴</span></span><br><span class="line">---</span><br><span class="line"><span class="number">1.</span> BeautifulSoup 클래스 <span class="keyword">import</span></span><br><span class="line"><span class="number">2.</span> BeautifulSoup 객체 생성</span><br><span class="line">- 생성시 조회할 문서 내용 전달</span><br><span class="line"><span class="number">3.</span> 문서 내에서 필요한 정보 조회</span><br><span class="line">- 태그이름과 태그 속성으로 조회</span><br><span class="line">- css selector를 이용해 조회</span><br><span class="line">- .표기법을 이용한 탐색  </span><br><span class="line"></span><br><span class="line"><span class="comment">### BeautifulSoup 객체 생성</span></span><br><span class="line">---</span><br><span class="line">```python</span><br><span class="line">BeautifulSoup(html str, [,파서])</span><br></pre></td></tr></table></figure>
 <h6><span id="매개변수">■ 매개변수</span></h6>
 <ul>
 <li>정보를 조회할 html을 string으로 전달</li>
@@ -296,9 +258,6 @@
 </ul>
 </li>
 </ul>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
 <h3><span id="tag-객체">Tag 객체</span></h3>
 <hr>
 <h6><span id="tag-객체">■ Tag 객체</span></h6>
@@ -333,9 +292,6 @@
 </ul>
 </li>
 </ul>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
-<h1><span id></span></h1>
 <h3><span id="메소드-조회">메소드 조회</span></h3>
 <hr>
 <h6><span id="태그-이름과-태그내의-속성으로-조회">■ 태그 이름과 태그내의 속성으로 조회</span></h6>
@@ -405,7 +361,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">웹 크롤링(Web Crawling)이란?</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text">■ 웹 크롤링</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">BeautifulSoup</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text">■ BeautifulSoup</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">0.0.0.1.</span> <span class="toc-nav-text">■ lxml</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">코딩패턴</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">BeautifulSoup 객체 생성</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text">■ 매개변수</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Tag 객체</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text">■ Tag 객체</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.2.</span> <span class="toc-nav-text">■ 주요 속성/메소드</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text"></span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">메소드 조회</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text">■ 태그 이름과 태그내의 속성으로 조회</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.2.</span> <span class="toc-nav-text">■ css selector를 이용해 조회</span></a></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">웹 크롤링(Web Crawling)이란?</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.1.</span> <span class="toc-nav-text">■ 웹 크롤링</span></a></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">BeautifulSoup</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.0.0.1.</span> <span class="toc-nav-text">■ BeautifulSoup</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.0.0.2.</span> <span class="toc-nav-text">■ 매개변수</span></a></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Tag 객체</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.0.0.1.</span> <span class="toc-nav-text">■ Tag 객체</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.0.0.2.</span> <span class="toc-nav-text">■ 주요 속성/메소드</span></a></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">메소드 조회</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.0.0.1.</span> <span class="toc-nav-text">■ 태그 이름과 태그내의 속성으로 조회</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.0.0.2.</span> <span class="toc-nav-text">■ css selector를 이용해 조회</span></a></li></ol></li></ol></li></ol></li></ol>
         
         </div>
       </aside>
