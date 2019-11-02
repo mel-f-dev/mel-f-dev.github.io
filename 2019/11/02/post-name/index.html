@@ -14,7 +14,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          &lt;post name&gt; - TIL by Mel
+          [웹 크롤링] BeautifulSoup - TIL by Mel
         
     </title>
 
@@ -86,8 +86,18 @@
                     <div class="post-heading">
                         <div class="tags">
                             
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                              <a class="tag" href="/tags/#webcrawling" title="webcrawling">webcrawling</a>
+                            
+                              <a class="tag" href="/tags/#TIL" title="TIL">TIL</a>
+                            
+                              <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
+                            
+                              <a class="tag" href="/tags/#주피터노트북" title="주피터노트북">주피터노트북</a>
+                            
                         </div>
-                        <h1>&lt;post name&gt;</h1>
+                        <h1>[웹 크롤링] BeautifulSoup</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Mel on
@@ -208,7 +218,143 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                
+                <hr>
+<h2><span id>{}</span></h2>
+<p>■ 웹 크롤링</p>
+<ul>
+<li>검색 엔진과 같은 여러 사이트에 있는 콘텐츠를 수집하는 작업</li>
+<li>필요한 내용을 파싱하여 추출</li>
+<li>아래 툴들이 필요하다.
+<ul>
+<li><code>BeautifulSoup</code> : 웹 데이터 크롤링 또는 스크래핑을 할 때 사용하는 python 라이브러리, 가져온 페이지에서 원하는 항목만 but 동적인 처리 못함</li>
+<li><code>Requests</code> : 웹에 있는 소스 가져오기</li>
+<li><code>Selenium</code> : 동적 처리 가능하도록</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h3><span id="beautifulsoup">BeautifulSoup</span></h3>
+<hr>
+<p>BeautifulSoup 라이브러리를 사용하기 위해 lxml을 설치 한다.</p>
+<p>■ BeautifulSoup</p>
+<ul>
+<li><code>HTML</code>이나 <code>XML</code> 문서 내에서 원하는 정보를 가져오기 위한 파이썬 라이브러리.</li>
+<li>아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install beautifulsoup4</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install beautifulsoup4</span><br></pre></td></tr></table></figure>
+<p>■ lxml</p>
+<ul>
+<li>Beautifusoup에서 기본적으로 지원하는 파서보다 더 빠르게 동작하는 모듈.</li>
+<li>아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install lxml</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install lxml</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<hr>
+<h3><span id="코딩패턴">코딩패턴</span></h3>
+<hr>
+<ol>
+<li>BeautifulSoup 클래스 import</li>
+<li>BeautifulSoup 객체 생성</li>
+</ol>
+<ul>
+<li>생성시 조회할 문서 내용 전달</li>
+</ul>
+<ol start="3">
+<li>문서 내에서 필요한 정보 조회</li>
+</ol>
+<ul>
+<li>태그이름과 태그 속성으로 조회</li>
+<li>css selector를 이용해 조회</li>
+<li>.표기법을 이용한 탐색</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h3><span id="beautifusoup-객체-생성">BeautifuSoup 객체 생성</span></h3>
+<hr>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BeautifulSoup(html str, [,파서])</span><br></pre></td></tr></table></figure>
+<p>■ 매개변수</p>
+<ul>
+<li>정보를 조회할 html을 string으로 전달</li>
+<li>파서(Parser)
+<ul>
+<li>html 분석기</li>
+<li>html.parser: 기본 파서</li>
+<li>lxml: 기본 파서보다 빠른 파서. html, xml 파싱 가능</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h3><span id="tag-객체">Tag 객체</span></h3>
+<hr>
+<p>■ Tag 객체</p>
+<ul>
+<li>문서내에서 원하는 정보 검색</li>
+<li>하나의 태그(element)와 관련된 정보를 담은 객체</li>
+<li>BeautifulSoup 조회 메소드들의 조회결과 반환타입</li>
+</ul>
+<p>■ 주요 속성/메소드</p>
+<ul>
+<li>
+<p>태그 속성값 조회</p>
+<ul>
+<li>tag객체.get(‘속성명’)</li>
+<li>tag객체[‘속성명’]</li>
+<li>tag.get(‘href’)</li>
+<li>tag[‘href’]</li>
+</ul>
+</li>
+<li>
+<p>태그내 text값 조회</p>
+<ul>
+<li>tag객체.get_text()</li>
+<li>tag객체.text</li>
+</ul>
+</li>
+<li>
+<p>contents 속성</p>
+<ul>
+<li>조회한 태그의 모든 자식 요소들을 리스트로 반환</li>
+<li>child_list = tag객체.contents;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h3><span id="메소드-조회">메소드 조회</span></h3>
+<p>■ 태그 이름과 태그내의 속성으로 조회</p>
+<ul>
+<li>find_all(name=태그명, attrs={속성명:속성값, …})</li>
+<li>find(name=태그명, attrs={속성명:속성값})
+<ul>
+<li>일치하는 태그 반환</li>
+<li>일치하는 태그가 여러개을 경우 첫번째 것만 반환</li>
+</ul>
+</li>
+</ul>
+<p>■ css selector를 이용해 조회</p>
+<ul>
+<li>select(selector=‘css셀렉터’)
+<ul>
+<li>css셀렉터와 일치하는 tag들을 반환</li>
+</ul>
+</li>
+<li>select_one(selector=‘css셀렉터’)
+<ul>
+<li>css 셀렉터와 일치하는 tag 반환</li>
+<li>일치하는 것이 여러개일 경우 첫번째 것만 반환</li>
+</ul>
+</li>
+</ul>
+
                 
 
                 <hr>
@@ -251,7 +397,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="nav">none</ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">{}</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">BeautifulSoup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">코딩패턴</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">BeautifuSoup 객체 생성</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">Tag 객체</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">메소드 조회</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -271,6 +417,16 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                          <a class="tag" href="/tags/#webcrawling" title="webcrawling">webcrawling</a>
+                        
+                          <a class="tag" href="/tags/#TIL" title="TIL">TIL</a>
+                        
+                          <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
+                        
+                          <a class="tag" href="/tags/#주피터노트북" title="주피터노트북">주피터노트북</a>
+                        
                     </div>
                 </section>
                 
