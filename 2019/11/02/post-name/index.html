@@ -224,7 +224,8 @@
 </blockquote>
 <h1><span id="웹-크롤링web-crawling이란">웹 크롤링(Web Crawling)이란?</span></h1>
 <hr>
-<h6><span id="웹-크롤링">■ 웹 크롤링</span></h6>
+<ul>
+<li>웹 크롤링
 <ul>
 <li>검색 엔진과 같은 여러 사이트에 있는 콘텐츠를 수집하는 작업</li>
 <li>필요한 내용을 파싱하여 추출</li>
@@ -236,30 +237,60 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h1><span id="beautifulsoup">BeautifulSoup</span></h1>
 <hr>
 <p>BeautifulSoup 라이브러리를 사용하기 위해 lxml을 설치 한다.</p>
-<h6><span id="beautifulsoup">■ BeautifulSoup</span></h6>
+<ul>
+<li>BeautifulSoup
 <ul>
 <li><code>HTML</code>이나 <code>XML</code> 문서 내에서 원하는 정보를 가져오기 위한 파이썬 라이브러리.</li>
 <li>아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</li>
 </ul>
+</li>
+</ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install beautifulsoup4</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install beautifulsoup4</span><br></pre></td></tr></table></figure>
-<h6><span id="lxml">■ lxml</span></h6>
+<ul>
+<li>■ lxml
 <ul>
 <li>Beautifusoup에서 기본적으로 지원하는 파서보다 더 빠르게 동작하는 모듈.</li>
 <li>아래 둘 중 하나를 아나콘다 프롬프트에 입력한다.</li>
+</ul>
+</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1.</span></span><br><span class="line">conda install lxml</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2.</span></span><br><span class="line">pip install lxml</span><br></pre></td></tr></table></figure>
 <h1><span id="코딩패턴">코딩패턴</span></h1>
 <hr>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>BeautifulSoup 클래스 import</span><br><span class="line"><span class="bullet">2. </span>BeautifulSoup 객체 생성</span><br><span class="line"><span class="bullet">  - </span>생성시 조회할 문서 내용 전달</span><br><span class="line"><span class="bullet">3. </span>문서 내에서 필요한 정보 조회</span><br><span class="line"><span class="bullet">  - </span>태그이름과 태그 속성으로 조회</span><br><span class="line"><span class="bullet">  - </span>css selector를 이용해 조회</span><br><span class="line"><span class="bullet">  - </span>.표기법을 이용한 탐색</span><br></pre></td></tr></table></figure>
+<ol>
+<li>BeautifulSoup 클래스 import</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>BeautifulSoup 객체 생성</li>
+</ol>
+<ul>
+<li>생성시 조회할 문서 내용 전달</li>
+</ul>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'example.html'</span>, <span class="string">'rt'</span>, encoding=<span class="string">'UTF-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">  doc = f.read()</span><br><span class="line">  print(doc)</span><br><span class="line"></span><br><span class="line"><span class="comment"># BeautifulSoup 객체 생성 - 분석할 HTML과 paser(분석기) 설정</span></span><br><span class="line">soup = BeautifulSoup(doc, <span class="string">'lxml'</span>)</span><br><span class="line">print(soup.prettify())</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>문서 내에서 필요한 정보 조회</li>
+</ol>
+<ul>
+<li>태그이름과 태그 속성으로 조회</li>
+<li>css selector를 이용해 조회</li>
+<li>.표기법을 이용한 탐색</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># class가 animal인 것을 모두 찾기</span></span><br><span class="line">animal_list = soup.select(<span class="string">"div.animal"</span>)</span><br><span class="line">animal_list</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(type(animal_list[<span class="number">0</span>]))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> animal <span class="keyword">in</span> animal_list:</span><br><span class="line">  print(animal.get_text(), animal.text)</span><br></pre></td></tr></table></figure>
 <h1><span id="beautifulsoup-객체-생성">BeautifulSoup 객체 생성</span></h1>
 <hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BeautifulSoup(html str, [,파서])</span><br></pre></td></tr></table></figure>
-<h6><span id="매개변수">■ 매개변수</span></h6>
+<ul>
+<li>매개변수
 <ul>
 <li>정보를 조회할 html을 string으로 전달</li>
 <li>파서(Parser)
@@ -270,15 +301,21 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h1><span id="tag-객체">Tag 객체</span></h1>
 <hr>
-<h6><span id="tag-객체">■ Tag 객체</span></h6>
+<ul>
+<li>Tag 객체
 <ul>
 <li>문서내에서 원하는 정보 검색</li>
 <li>하나의 태그(element)와 관련된 정보를 담은 객체</li>
 <li>BeautifulSoup 조회 메소드들의 조회결과 반환타입</li>
 </ul>
-<h6><span id="주요-속성메소드">■ 주요 속성/메소드</span></h6>
+</li>
+</ul>
+<ul>
+<li>주요 속성/메소드
 <ul>
 <li>
 <p>태그 속성값 조회</p>
@@ -304,9 +341,12 @@
 </ul>
 </li>
 </ul>
-<h1><span id="메소드-조회">메소드 조회</span></h1>
+</li>
+</ul>
+<h1><span id="조회메소드">조회메소드</span></h1>
 <hr>
-<h6><span id="태그-이름과-태그내의-속성으로-조회">■ 태그 이름과 태그내의 속성으로 조회</span></h6>
+<ul>
+<li>태그 이름과 태그내의 속성으로 조회
 <ul>
 <li>find_all(name=태그명, attrs={속성명:속성값, …})</li>
 <li>find(name=태그명, attrs={속성명:속성값})
@@ -316,7 +356,20 @@
 </ul>
 </li>
 </ul>
-<h6><span id="css-selector를-이용해-조회">■ css selector를 이용해 조회</span></h6>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'example.html'</span>, <span class="string">'rt'</span>, encoding=<span class="string">'UTF-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">  doc = f.read()</span><br><span class="line"></span><br><span class="line">soup = BeautifulSoup(doc, <span class="string">'lxml'</span>)</span><br><span class="line">ani_list = soup.find_all(<span class="string">"div"</span>, attrs=&#123;<span class="string">"calss"</span>:<span class="string">"animal"</span>&#125;)</span><br><span class="line"></span><br><span class="line">ani_list</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ani <span class="keyword">in</span> ani_list:</span><br><span class="line"><span class="comment"># ani 타입 조회</span></span><br><span class="line">  print(type(ani))</span><br><span class="line"><span class="comment"># 속성값 조회</span></span><br><span class="line">  print(ani.get_text(), ani.text)</span><br><span class="line"><span class="comment"># 클래스명 조회</span></span><br><span class="line">  print(ani.get(<span class="string">'class'</span>), ani[<span class="string">'class'</span>]))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ani_1 = soup.find_all(<span class="string">'div'</span>, attrs=&#123;<span class="string">'id'</span>:<span class="string">'animal1'</span>&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 맞는지 확인</span></span><br><span class="line">ani_1 = soup.find_all(<span class="string">"div"</span>, attrs=&#123;<span class="string">'id'</span>:<span class="string">'animal1'</span>&#125;)</span><br><span class="line">ani_1.text</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a_list = soup.find_all(<span class="string">"a"</span>)</span><br><span class="line">a_list</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">links = []</span><br><span class="line">names = []</span><br><span class="line"><span class="keyword">for</span> a <span class="keyword">in</span> a_list:</span><br><span class="line">  links.append(a.get(<span class="string">'href'</span>))    <span class="comment"># a의 href 속성 값 조회</span></span><br><span class="line">  names.append(a.get_text())</span><br><span class="line">print(links)</span><br><span class="line">print(names)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">animal_cls = soup.find_all(attrs=&#123;<span class="string">'class'</span>:<span class="string">'animal'</span>&#125;)</span><br><span class="line">animal_cls</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a_list = soup.find_all(<span class="string">'a'</span>)</span><br><span class="line">a_list</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># tag.findXXXX() : tag(부모) 내의 element를 찾는다.</span></span><br><span class="line"><span class="comment"># soup.findXXXX() : 전체 문서 내에서 element를 찾는다.</span></span><br><span class="line"></span><br><span class="line">ani_1 = soup.find(<span class="string">'div'</span>, attrs=&#123;<span class="string">'id'</span>:<span class="string">'animal1'</span>&#125;)</span><br><span class="line">ani = ani_1.find(attrs=&#123;<span class="string">'class'</span>:<span class="string">'animal'</span>&#125;)</span><br><span class="line">ani</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">soup.find(<span class="string">'div'</span>, attrs=&#123;<span class="string">'id'</span>:<span class="string">'animal1'</span>&#125;).find(attrs=&#123;<span class="string">'class'</span>:<span class="string">'animal'</span>&#125;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>css selector를 이용해 조회
 <ul>
 <li>select(selector=‘css셀렉터’)
 <ul>
@@ -327,6 +380,8 @@
 <ul>
 <li>css 셀렉터와 일치하는 tag 반환</li>
 <li>일치하는 것이 여러개일 경우 첫번째 것만 반환</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -373,7 +428,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">웹 크롤링(Web Crawling)이란?</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.0.0.0.0.1.</span> <span class="toc-nav-text">■ 웹 크롤링</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">BeautifulSoup</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.0.0.0.0.1.</span> <span class="toc-nav-text">■ BeautifulSoup</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.0.0.0.0.2.</span> <span class="toc-nav-text">■ lxml</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">코딩패턴</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">BeautifulSoup 객체 생성</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.0.0.0.0.1.</span> <span class="toc-nav-text">■ 매개변수</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">Tag 객체</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.0.0.0.0.1.</span> <span class="toc-nav-text">■ Tag 객체</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.0.0.0.0.2.</span> <span class="toc-nav-text">■ 주요 속성/메소드</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">메소드 조회</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.0.0.0.0.1.</span> <span class="toc-nav-text">■ 태그 이름과 태그내의 속성으로 조회</span></a></li><li class="toc-nav-item toc-nav-level-6"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.0.0.0.0.2.</span> <span class="toc-nav-text">■ css selector를 이용해 조회</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">웹 크롤링(Web Crawling)이란?</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">BeautifulSoup</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">코딩패턴</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">BeautifulSoup 객체 생성</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">Tag 객체</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">조회메소드</span></a></li></ol>
         
         </div>
       </aside>
