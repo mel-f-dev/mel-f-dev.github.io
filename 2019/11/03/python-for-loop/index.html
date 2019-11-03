@@ -159,14 +159,14 @@
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
@@ -242,13 +242,13 @@
 <p>튜플의 각각의 요소가 자동으로 (first, last)변수에 대입된다.</p>
 <h1><span id="for문-응용">for문 응용</span></h1>
 <hr>
-<p><em>총 5명의 학생이 시험을 보았는데 시험 점수가 60점이 넘으면 합격이고 그렇지 않으면 불합격이다. 합격인지 불합격인지 결과를 보여 주시오.</em></p>
+<p><strong><em>Q. 총 5명의 학생이 시험을 보았는데 시험 점수가 60점이 넘으면 합격이고 그렇지 않으면 불합격이다. 합격인지 불합격인지 결과를 보여 주시오.</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">marks = [<span class="number">90</span>, <span class="number">25</span>, <span class="number">67</span>, <span class="number">45</span>, <span class="number">80</span>]</span><br><span class="line"></span><br><span class="line">number = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> marks:</span><br><span class="line">  number += <span class="number">1</span></span><br><span class="line">  <span class="keyword">if</span> i &gt;= <span class="number">60</span>:</span><br><span class="line">    print(<span class="string">"&#123;&#125;번 학생은 합격입니다."</span>.format(number))</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"&#123;&#125;번 학생은 불합격입니다."</span>.format(number))</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">1</span>번 학생은 합격입니다.</span><br><span class="line">&gt;<span class="number">2</span>번 학생은 불합격입니다.</span><br><span class="line">&gt;<span class="number">3</span>번 학생은 합격입니다.</span><br><span class="line">&gt;<span class="number">4</span>번 학생은 불합격입니다.</span><br><span class="line">&gt;<span class="number">5</span>번 학생은 합격입니다.</span><br></pre></td></tr></table></figure>
 <h1><span id="for문과-continue">for문과 continue</span></h1>
 <hr>
 <p>for문 안의 문장을 수행하는 도중 continue문을 만나면 for문의 처음으로 돌아간다.<br>
-<em>위 문제에서 60점을 넘은 합격자에게 축하 메시지를 보내고 나머지에게는 아무 메시지도 전하지 않는 프로그램을 작성해보자.</em></p>
+<strong><em>Q. 위 문제에서 60점을 넘은 합격자에게 축하 메시지를 보내고 나머지에게는 아무 메시지도 전하지 않는 프로그램을 작성해보자.</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">marks = [<span class="number">90</span>, <span class="number">25</span>, <span class="number">67</span>, <span class="number">45</span>, <span class="number">80</span>]</span><br><span class="line"></span><br><span class="line">number = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> marks:</span><br><span class="line">  number += <span class="number">1</span></span><br><span class="line">  <span class="keyword">if</span> i &lt; <span class="number">60</span>:</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  print(<span class="string">"&#123;&#125;번 학생 축하합니다. 합격입니다."</span>.format(number))</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">1</span>번 학생 축하합니다. 합격입니다.</span><br><span class="line">&gt;<span class="number">3</span>번 학생 축하합니다. 합격입니다.</span><br><span class="line">&gt;<span class="number">5</span>번 학생 축하합니다. 합격입니다.</span><br></pre></td></tr></table></figure>
 <h1><span id="for-in-연관-내장함수">for in 연관 내장함수</span></h1>
@@ -261,7 +261,7 @@
 <li>증감값 생략시 1이 기본값</li>
 <li>멈춤값은 생략 불가<br>
 <img src="https://blogfiles.pstatic.net/MjAxOTEwMDdfODYg/MDAxNTcwNDA5NDUyNDA3.k9MBnzkzcnnDIWlDvKjluZRAfMvBzOl5lrXlfKVzbZ8g.fts1Rjtb63ZTSpwDeNnINkdERHJPcLUlV1FZTz5q_Gwg.PNG.iklues_/image.png" alt="range함수" title="파이썬 range함수 용례"><br>
-<em>위의 문제를 range함수를 활용해서 해결해보자.</em></li>
+<strong><em>Q. 위의 문제를 range함수를 활용해서 해결해보자.</em></strong></li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">marks = [<span class="number">90</span>, <span class="number">25</span>, <span class="number">67</span>, <span class="number">45</span>, <span class="number">80</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(marks)):</span><br><span class="line">  <span class="keyword">if</span> marks[i] &lt; <span class="number">60</span>:</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  print(<span class="string">"&#123;&#125;번 학생 축하합니다. 합격입니다."</span>.format(i+<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
 <h2><span id="enumerate">enumerate()</span></h2>
@@ -308,6 +308,10 @@
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2019/11/03/python-while-loop/" data-toggle="tooltip" data-placement="top" title="[python] 반복문 - while문">&larr; Previous Post</a>
+                        </li>
                     
                     
                         <li class="next">
