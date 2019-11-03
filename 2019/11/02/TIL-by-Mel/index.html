@@ -14,7 +14,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          포스트 테스트 중 - TIL by Mel
+          [웹 크롤링] Requests - TIL by Mel
         
     </title>
 
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('null')
+            background-image: url('Demo.png')
             /*post*/
         
     }
@@ -86,10 +86,18 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#firstposting" title="firstposting">firstposting</a>
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                              <a class="tag" href="/tags/#webcrawling" title="webcrawling">webcrawling</a>
+                            
+                              <a class="tag" href="/tags/#TIL" title="TIL">TIL</a>
+                            
+                              <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
+                            
+                              <a class="tag" href="/tags/#주피터노트북" title="주피터노트북">주피터노트북</a>
                             
                         </div>
-                        <h1>포스트 테스트 중</h1>
+                        <h1>[웹 크롤링] Requests</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Mel on
@@ -211,8 +219,149 @@
                 post-container">
 
                 <blockquote>
-<p>아아 테스트 중입니다. 네이버 블로그에서 옮겨야해요<a href="https://blog.naver.com/iklues_" target="_blank" rel="noopener">Sing HappyBirthday</a>.</p>
+<p>from 2019/10/31</p>
+<p>웹 크롤링 정리 중</p>
 </blockquote>
+<h1><span id="url">URL</span></h1>
+<hr>
+<ul>
+<li>URL(Uniform Resource Locator)
+<ul>
+<li>URL의 구성요소
+<ul>
+<li>스키마(schema): 통신 방식</li>
+<li>호스트(host): 서버 주소</li>
+<li>패스(path): 서버에서 문서의 위치</li>
+<li>쿼리(query): 문서에 전달하는 추가 정보</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>URL 예</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.naver.com:80/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=scraping</span><br></pre></td></tr></table></figure>
+<ul>
+<li>스키마(scheme): https://</li>
+<li>호스트(host): <a href="http://search.naver.com" target="_blank" rel="noopener">search.naver.com</a></li>
+<li>포트번호(port): 80. 웹브라우저들은 port 번호 생략시 80으로 전송된다.</li>
+<li>자원경로(path): search.naver</li>
+<li>쿼리스트링(query): ?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=scraping</li>
+</ul>
+<h1><span id="urllib-모듈-url-분석">urllib 모듈 - url 분석</span></h1>
+<hr>
+<ul>
+<li>urlib
+<ul>
+<li>url과 관련된 다양한 기능을 제공하는 파이썬 내장 모듈</li>
+<li>url 경로 합치기</li>
+<li>url 구문 분석</li>
+<li>url의 자원(페이지) 요청</li>
+</ul>
+</li>
+<li>url 분석</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line">url = <span class="string">'https://search.naver.com:80/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=scraping'</span></span><br><span class="line">p = parse.urlparse(url)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 스키마</span></span><br><span class="line">p.scheme</span><br><span class="line"><span class="comment"># 호스트</span></span><br><span class="line">p.hostname</span><br><span class="line"><span class="comment"># 포트번호</span></span><br><span class="line"><span class="comment"># G: url에 없으면 안 나온다.</span></span><br><span class="line">p.port</span><br><span class="line"><span class="comment"># 패스(자원경로)</span></span><br><span class="line">p.path</span><br><span class="line"><span class="comment"># 쿼리</span></span><br><span class="line">p.query</span><br></pre></td></tr></table></figure>
+<h1><span id="url-합치기">URL 합치기</span></h1>
+<hr>
+<ul>
+<li>parse.urljoin(base, url)
+<ul>
+<li>host는 동일하고 path 이후가 바뀌는 경우; 같은 사이트의 다른 자원을 조회할 때 유용</li>
+<li>중복되는 url을 base url로 지정하고 바뀌는 부분만 붙이면 편리</li>
+<li><code>base</code>+<code>/</code>+<code>url</code>형태로 합쳐준다.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line">base_url = <span class="string">'http://main.com'</span></span><br><span class="line">path1 = <span class="string">'/news/it.html'</span></span><br><span class="line">path2 = <span class="string">'/news/sports.html'</span></span><br><span class="line">path3 = <span class="string">'/shopping/cloth.html'</span></span><br><span class="line">print(parse.urljoin(base_url, path1))</span><br><span class="line">print(parse.urljoin(base_url, path2))</span><br><span class="line">print(parse.urljoin(base_url, path3))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">path = [path1, path2, path3]</span><br><span class="line"><span class="keyword">for</span> p <span class="keyword">in</span> path:</span><br><span class="line">    url = parse.urljoin(base_url, p)</span><br><span class="line">    print(url, <span class="string">'요청'</span>)</span><br></pre></td></tr></table></figure>
+<h1><span id="requests-모듈">Requests 모듈</span></h1>
+<ul>
+<li>HTTP 요청을 처리하는 파이썬 패키지</li>
+<li>쿠키, 헤더정보 등 HTTP의 다양한 요청처리 지원</li>
+<li>get, host 방식 모두 지원</li>
+<li>내장 라이브러리 X, 별도의 설치 필요</li>
+<li>아래 둘 중 하나를 아나콘다 프롬프트에 입력</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install requests2</span><br><span class="line">conda install -c conda-forge requests</span><br></pre></td></tr></table></figure>
+<h1><span id="요청함수">요청함수</span></h1>
+<ul>
+<li><code>requests.get(URL)</code>
+<ul>
+<li>주요 매개변수
+<ul>
+<li>params: 요청파라미터를 dictionary나 tuple로 전달</li>
+<li>headers: HTTP 요청 header를 dictionary로 전달
+<ul>
+<li>‘User-Agent’, ‘Referer’ 헤더 설정</li>
+</ul>
+</li>
+<li>cookies: 쿠키정보를 전달</li>
+</ul>
+</li>
+<li>응답 결과를 Response 객체에 담아 반환
+<ul>
+<li>Response의 속성을 이용해 응답결과를 조회</li>
+<li>status_code: HTTP 응답 상태코드</li>
+<li>text: 응답내용(HTML)</li>
+<li>content: 응답내용(응답결과가 binary 일 경우 - image, 동영상등)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.pythonscraping.com/pages/warandpeace.html'</span></span><br><span class="line"></span><br><span class="line">res = requests.get(url)</span><br><span class="line">print(res.status_code)</span><br><span class="line"><span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">  print(res.text)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>요청 파라미터 전달
+<ul>
+<li>요청파라미터란?
+<ul>
+<li>서버가 일하기 위해 클라이언트로 부터 받아야하는 값들</li>
+<li>name=value 형태이며 여러개일 경우 &amp;로 연결해서 전송됨</li>
+</ul>
+</li>
+<li>Get 요청시 queryString 으로 전달
+<ul>
+<li>querystring : URL 뒤에 붙여서 전송한다.</li>
+<li>ex) <a href="https://search.naver.com/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=python" target="_blank" rel="noopener">https://search.naver.com/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=python</a></li>
+<li>requests.get() 요청시
+<ul>
+<li>url 뒤에 querystring으로 붙여서 전송</li>
+<li>dictionary 에 name=value 형태로 만들어 매개변수 params에 전달</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Post 요청시 요청정보의 body에 넣어 전달</li>
+</ul>
+</li>
+<li>HTTP 요청 헤더(Request Header)
+<ul>
+<li>HTTP 요청시 웹브라우저가 client의 여러 부가적인 정보들을 Key-Value 쌍 형식으로 전달한다.
+<ul>
+<li>accept: 클라이언트가 처리가능한 content 타입 (Mime-type 형식으로 전달)</li>
+<li>accept-language: 클라이언트가 지원하는 언어(ex: ko, en-US)</li>
+<li>host: 요청한 host</li>
+<li>user-agent: 웹브라우저 종류</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><code>requests.post(URL)</code>
+<ul>
+<li><strong>POST 방식 요청</strong></li>
+<li>주요 매개변수
+<ul>
+<li>datas : 요청파라미터를 dictionary나 tuple로 전달</li>
+<li>headers: Get방식과 동일</li>
+<li>cookies: Get방식과 동일</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
                 
 
@@ -252,7 +401,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="nav">none</ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">URL</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">urllib 모듈 - url 분석</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">URL 합치기</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">Requests 모듈</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">요청함수</span></a></li></ol>
         
         </div>
       </aside>
@@ -272,7 +421,15 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#firstposting" title="firstposting">firstposting</a>
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                          <a class="tag" href="/tags/#webcrawling" title="webcrawling">webcrawling</a>
+                        
+                          <a class="tag" href="/tags/#TIL" title="TIL">TIL</a>
+                        
+                          <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
+                        
+                          <a class="tag" href="/tags/#주피터노트북" title="주피터노트북">주피터노트북</a>
                         
                     </div>
                 </section>
