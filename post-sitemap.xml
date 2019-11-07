@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2019/11/02/TIL-by-Mel/</loc>
+        <lastmod>2019-11-07T12:35:52.275Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/11/05/web-cralwling-daum/</loc>
+        <lastmod>2019-11-05T12:55:37.448Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2019/11/03/python-for-loop/</loc>
         <lastmod>2019-11-03T08:45:24.825Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -25,14 +41,6 @@
     <url>
         <loc>http://yoursite-url/2019/11/02/post-name/</loc>
         <lastmod>2019-11-03T03:34:59.950Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/11/02/TIL-by-Mel/</loc>
-        <lastmod>2019-11-03T03:21:19.942Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

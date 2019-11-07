@@ -7,15 +7,15 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/Web-Crawling/</loc>
-        <lastmod>2019-11-03T03:34:59.950Z</lastmod>
+        <loc>http://yoursite-url/categories/Python/</loc>
+        <lastmod>2019-11-03T08:45:24.825Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/Python/</loc>
-        <lastmod>2019-11-03T08:45:24.825Z</lastmod>
+        <loc>http://yoursite-url/categories/Web-Crawling/</loc>
+        <lastmod>2019-11-07T12:35:52.275Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
