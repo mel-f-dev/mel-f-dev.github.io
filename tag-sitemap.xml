@@ -51,20 +51,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/TIL/</loc>
-        <lastmod>2019-11-07T13:04:53.616Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/tags/python/</loc>
-        <lastmod>2019-11-07T13:04:53.616Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite-url/tags/%EC%A3%BC%ED%94%BC%ED%84%B0%EB%85%B8%ED%8A%B8%EB%B6%81/</loc>
         <lastmod>2019-11-07T13:04:53.616Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -72,15 +58,50 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/tags/python/</loc>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite-url/tags/webcrawling/</loc>
-        <lastmod>2019-11-07T13:04:53.616Z</lastmod>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/TIL/</loc>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://yoursite-url/tags/Today-I-Learned-by-Mel/</loc>
-        <lastmod>2019-11-07T13:04:53.616Z</lastmod>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/VisualStudioCode/</loc>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/NaveropenAPI/</loc>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/NAVERDevelopers/</loc>
+        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
