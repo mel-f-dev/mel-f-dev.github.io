@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [웹크롤링] 네이버 오픈 API 용어 정리-1 - TIL by Mel
+          20191112_TIL_By_Mel - TIL by Mel
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2019/11/07/web-crawling-NAVER/">
+    <link rel="canonical" href="http://yoursite-url/2019/11/13/20191113-TILBYMEL/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -92,20 +92,14 @@
                             
                               <a class="tag" href="/tags/#TIL" title="TIL">TIL</a>
                             
-                              <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
-                            
-                              <a class="tag" href="/tags/#VisualStudioCode" title="VisualStudioCode">VisualStudioCode</a>
-                            
-                              <a class="tag" href="/tags/#NaveropenAPI" title="NaveropenAPI">NaveropenAPI</a>
-                            
-                              <a class="tag" href="/tags/#NAVERDevelopers" title="NAVERDevelopers">NAVERDevelopers</a>
+                              <a class="tag" href="/tags/#jupyter notebook" title="jupyter notebook">jupyter notebook</a>
                             
                         </div>
-                        <h1>[웹크롤링] 네이버 오픈 API 용어 정리-1</h1>
-                        <h2 class="subheading">기사 키워드 검색결과 조회하기</h2>
+                        <h1>20191112_TIL_By_Mel</h1>
+                        <h2 class="subheading">웹크롤링 미니프로젝트 중</h2>
                         <span class="meta">
                             Posted by Mel on
-                            2019-11-07
+                            2019-11-13
                         </span>
                     </div>
                 
@@ -222,56 +216,50 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <blockquote>
-<p>API(Application Programming Interface)란?<br>
-응용 프로그램 프로그래밍 인터페이스<br>
-응용 프로그램에서 사용할 수 있도록, 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 뜻한다. 주로 파일 제어, 창 제어, 화상 처리, 문자 제어 등을 위한 인터페이스를 제공한다.<br>
-내용 참고 및 출처</p>
+                <h1><span id="오늘-한-일">오늘 한 일</span></h1>
 <ul>
-<li>위키백과</li>
-<li><a href="https://developers.naver.com/docs/common/openapiguide/apiterms.md#apiapplication-programming-interface" target="_blank" rel="noopener">네이버 개발자센터</a></li>
-</ul>
-</blockquote>
-<hr>
-<h1><span id="네이버-오픈-api-출처네이버개발자센터">네이버 오픈 API (출처:네이버개발자센터)</span></h1>
+<li>BeautifulSoup, Requests, Selenium 활용 웹크롤링 팀 프로젝트 시작
 <ul>
-<li>API(application programming interface)
-<ul>
-<li>운영체제나 시스템, 애플리케이션, 라이브러리 등을 활용해 응용 프로그램을 작성할 수 있게 하는 다양한 인터페이스를 의미</li>
-<li>Window API, Java API, HTML5 API, Android API 등</li>
+<li>주제 선정 : 웹툰 각 화 별 제목, 등록일, 평점, 댓글 불러오기</li>
+<li>목적 : 평점, 댓글, 작가 또는 작품에 대한 여론 간 상관관계 파악</li>
 </ul>
 </li>
-<li>오픈 API
+<li>SK True Innovation ‘데이터 공유로 만들어 가는 새로운 가치’ 세미나 참여</li>
+<li>Bright
 <ul>
-<li>API 중에서 플랫폼의 기능 또는 콘텐츠를 외부에서 웹 프로토콜(HTTP)로 호출해 사용할 수 있게 개방(open)한 API</li>
-<li>네이버 개발자센터에서 제공하고 있는 지도, 검색을 비롯 기계 번역, 캡차, 단축 URL 등 대부분 API는 HTTP로 호출할 수 있는 오픈 API에 해당</li>
+<li>주피터노트북으로 웹툰 ‘복학왕’ 각 화 제목, 등록일, 평점 크롤링 성공</li>
+<li>다음소프트 송길영 부사장의 주옥같은 강연 - 나만의 라이프태그를 만들자!</li>
 </ul>
 </li>
-<li>애플리케이션: API를 활용해 만들어진 다양한 프로그램 결과물</li>
-</ul>
-<hr>
-<h1><span id="api-호출">API 호출</span></h1>
+<li>Dark
 <ul>
-<li>요청URL
-<ul>
-<li>오픈 API를 호출하기 위한 API의 웹주소(URL)</li>
-<li>형태 : <a href="https://openapi.naver.com/%EB%B2%84%EC%A0%84/%EC%84%9C%EB%B9%84%EC%8A%A4%EA%B5%AC%EB%B6%84/API%EA%B5%AC%EB%B6%84" target="_blank" rel="noopener">https://openapi.naver.com/버전/서비스구분/API구분</a></li>
-</ul>
-</li>
-<li>요청변수
-<ul>
-<li>오픈 API를 호출할 때 함께 서버로 전송해야 하는 값</li>
-<li>요청 변수의 이름이 틀리거나 필수 요청 변수가 누락되지 않도록 주의</li>
-</ul>
-</li>
-<li>URL인코딩
-<ul>
-<li>한글이나 특수문자를 지정된 규칙에 따라 코드값으로 변환하는 것</li>
+<li>댓글 크롤링 실패 - 문제 분석 실패</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h1><span id="http">HTTP</span></h1>
+<h1><span id="반성할-부분">반성할 부분</span></h1>
+<ul>
+<li>웹크롤링 관련 코드 개념이 아직 머리에 정확히 인식되지 않음</li>
+<li>그래서 언제 어떤 코드를 쓰는게 맞는지 확신이 없음</li>
+<li>잘 되지 않으면 완전히 새로운 알고리즘을 짜보려고 시도할 수 있는 노력과 강단이 필요하다.</li>
+</ul>
+<hr>
+<h1><span id="내일-할-일">내일 할 일</span></h1>
+<ul>
+<li>불러온 정보 왜, 어떻게 크롤링 했는지, 어떤 방법으로 활용할 것인지 정리</li>
+<li>발표 준비하기
+<ul>
+<li>준비하면서 잘못했던 부분, 잘 안 됐던 부분, 해결한 방법 등 꼼꼼히 정리</li>
+</ul>
+</li>
+<li>ADsP 기출 분석 풀이 끝!</li>
+</ul>
+<hr>
+<h1><span id="블로그에서-개선하고-싶은-부분">블로그에서 개선하고 싶은 부분</span></h1>
+<ul>
+<li>방문자수 확인, 댓글 입력 가능한 위젯 넣기</li>
+</ul>
 
                 
 
@@ -280,12 +268,12 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/2019/11/13/20191113-TILBYMEL/" data-toggle="tooltip" data-placement="top" title="20191112_TIL_By_Mel">&larr; Previous Post</a>
+                            <a href="/2019/11/14/20191108-TIL-by-Mel/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
                         </li>
                     
                     
                         <li class="next">
-                            <a href="/2019/11/05/web-cralwling-daum/" data-toggle="tooltip" data-placement="top" title="[웹크롤링] Daum뉴스 크롤링">Next Post &rarr;</a>
+                            <a href="/2019/11/07/web-crawling-NAVER/" data-toggle="tooltip" data-placement="top" title="[웹크롤링] 네이버 오픈 API 용어 정리-1">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -311,7 +299,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">네이버 오픈 API (출처:네이버개발자센터)</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">API 호출</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">HTTP</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">오늘 한 일</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">반성할 부분</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">내일 할 일</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">블로그에서 개선하고 싶은 부분</span></a></li></ol>
         
         </div>
       </aside>
@@ -337,13 +325,7 @@
                         
                           <a class="tag" href="/tags/#TIL" title="TIL">TIL</a>
                         
-                          <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
-                        
-                          <a class="tag" href="/tags/#VisualStudioCode" title="VisualStudioCode">VisualStudioCode</a>
-                        
-                          <a class="tag" href="/tags/#NaveropenAPI" title="NaveropenAPI">NaveropenAPI</a>
-                        
-                          <a class="tag" href="/tags/#NAVERDevelopers" title="NAVERDevelopers">NAVERDevelopers</a>
+                          <a class="tag" href="/tags/#jupyter notebook" title="jupyter notebook">jupyter notebook</a>
                         
                     </div>
                 </section>
