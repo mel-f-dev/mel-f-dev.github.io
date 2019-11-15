@@ -8,31 +8,7 @@
 
     <url>
         <loc>http://yoursite-url/2019/11/13/20191113-TILBYMEL/</loc>
-        <lastmod>2019-11-15T15:19:49.516Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/11/15/numpy-191115/</loc>
-        <lastmod>2019-11-15T00:24:31.209Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/11/14/20191108-TIL-by-Mel/</loc>
-        <lastmod>2019-11-08T08:49:05.344Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/11/07/web-crawling-NAVER/</loc>
-        <lastmod>2019-11-08T02:13:33.194Z</lastmod>
+        <lastmod>2019-11-15T15:24:03.499Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,14 +17,6 @@
     <url>
         <loc>http://yoursite-url/2019/11/02/TIL-by-Mel/</loc>
         <lastmod>2019-11-07T13:04:53.616Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/11/05/web-cralwling-daum/</loc>
-        <lastmod>2019-11-05T12:55:37.448Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
