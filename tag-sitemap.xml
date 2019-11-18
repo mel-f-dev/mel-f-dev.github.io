@@ -58,14 +58,14 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/webcrawling/</loc>
+        <loc>http://yoursite-url/tags/jupyter-notebook/</loc>
         <lastmod>2019-11-15T15:35:49.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/jupyter-notebook/</loc>
+        <loc>http://yoursite-url/tags/webcrawling/</loc>
         <lastmod>2019-11-15T15:35:49.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
