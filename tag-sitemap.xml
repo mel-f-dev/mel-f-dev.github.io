@@ -114,6 +114,13 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/tags/Today-I-Learned-by-Mel/</loc>
+        <lastmod>2019-11-18T00:58:11.623Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite-url/tags/numpy/</loc>
         <lastmod>2019-11-18T00:58:11.623Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -122,13 +129,6 @@
 
     <url>
         <loc>http://yoursite-url/tags/hexo-blog/</loc>
-        <lastmod>2019-11-18T00:58:11.623Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/tags/Today-I-Learned-by-Mel/</loc>
         <lastmod>2019-11-18T00:58:11.623Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
