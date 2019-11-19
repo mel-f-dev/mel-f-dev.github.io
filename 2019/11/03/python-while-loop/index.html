@@ -153,6 +153,13 @@
 
                         
                         <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -161,13 +168,6 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -264,13 +264,13 @@ if문 속에서 <strong>break</strong> 문에 의해 while문을 빠져나가게
 <br><br>
 <strong><em>Q. 위의 예제를 활용하여 실제 자판기 작동 과정과 비슷하게 만들어보자.</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">coffee = <span class="number">5</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">  money = int(input(<span class="string">"돈을 넣어주세요:"</span>))</span><br><span class="line">  <span class="keyword">if</span> money == <span class="number">300</span>:</span><br><span class="line">    print(<span class="string">"커피를 줍니다."</span>)</span><br><span class="line">    coffee -= <span class="number">1</span></span><br><span class="line">  <span class="keyword">elif</span> money &gt; <span class="number">300</span>:</span><br><span class="line">    print(<span class="string">"거스름돈 %d를 주고 커피를 줍니다."</span> % (money - <span class="number">300</span>))</span><br><span class="line">    coffee -= <span class="number">1</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"돈을 다시 돌려주고 커피를 주지 않습니다."</span>)</span><br><span class="line">    print(<span class="string">"남은 커피의 양은 %d개 입니다."</span> % coffee)</span><br><span class="line">  <span class="keyword">if</span> coffee == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"커피가 다 떨어졌습니다. 판매를 중지합니다."</span>)</span><br><span class="line">    <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">돈을 넣어주세요:<span class="number">4000</span></span><br><span class="line">거스름돈 <span class="number">3700</span>를 주고 커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">200</span></span><br><span class="line">돈을 다시 돌려주고 커피를 주지 않습니다.</span><br><span class="line">남은 커피의 양은 <span class="number">3</span>개 입니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">커피가 다 떨어졌습니다. 판매를 중지합니다.</span><br></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">돈을 넣어주세요:<span class="number">4000</span></span><br><span class="line">거스름돈 <span class="number">3700</span>를 주고 커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">200</span></span><br><span class="line">돈을 다시 돌려주고 커피를 주지 않습니다.</span><br><span class="line">남은 커피의 양은 <span class="number">3</span>개 입니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">돈을 넣어주세요:<span class="number">300</span></span><br><span class="line">커피를 줍니다.</span><br><span class="line">커피가 다 떨어졌습니다. 판매를 중지합니다.</span><br></pre></td></tr></table></figure>
 <h1><span id="while문과-continue">while문과 continue</span></h1>
 <hr>
 <p>while문 안의 문장을 수행할 때 입력 조건을 검사해서 조건에 맞지 않으면 while문을 빠져나간다.<br>
 그런데 while문을 빠져나가지 않고 while문의 맨 처음 조건문으로 다시 돌아가게 만들고 싶은 경우 continue문을 사용한다.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> a &lt; <span class="number">10</span>:</span><br><span class="line">  a += <span class="number">1</span></span><br><span class="line">  <span class="keyword">if</span> a % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  print(a)</span><br></pre></td></tr></table></figure>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure>
 <p>a가 10보다 작은 동안 a는 1만큼씩 계속 증가한다. <code>if a%2 == 0</code>이 참이 되는 경우는 a가 짝수일 때이므로 continue문장을 수행한다. 따라서 a가 짝수이면 <code>print(a)</code>는 수행되지 않는다.</p>
 
                 
