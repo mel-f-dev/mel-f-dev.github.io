@@ -14,15 +14,22 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/Web-Crawling/</loc>
-        <lastmod>2019-11-07T13:04:53.616Z</lastmod>
+        <loc>http://yoursite-url/categories/TIL/</loc>
+        <lastmod>2019-11-19T02:23:08.182Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/categories/TIL/</loc>
-        <lastmod>2019-11-19T02:23:08.182Z</lastmod>
+        <loc>http://yoursite-url/categories/Web-Crawling/</loc>
+        <lastmod>2019-11-25T11:33:11.910Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/</loc>
+        <lastmod>2019-11-25T11:38:19.538Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
