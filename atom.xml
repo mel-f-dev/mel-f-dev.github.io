@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
-  <updated>2019-11-25T11:54:55.052Z</updated>
+  <updated>2019-12-11T12:52:51.164Z</updated>
   <id>http://yoursite-url/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[TIL] 20191115</title>
+    <link href="http://yoursite-url/2019/12/11/TIL-20191211/"/>
+    <id>http://yoursite-url/2019/12/11/TIL-20191211/</id>
+    <published>2019-12-11T12:36:44.000Z</published>
+    <updated>2019-12-11T12:52:51.164Z</updated>
+    
+    <content type="html"><![CDATA[<h2><span id="오늘-한-일">오늘 한 일</span></h2><ul><li><code>동빈나</code> youtube 강의<ul><li>파이썬 기초 내용 복습</li><li>‘RUR-PLE’ 프로그램 학습</li><li>‘NumPy’ 기본 내용 복습</li></ul></li><li>머신러닝 수업내용 복습 조금</li><li>백준 알고리즘 쉬운 것 부터 다시(블로그에 정리 예정)</li></ul><h4><span id="good">good</span></h4><ul><li>뜻밖의 휴가 덕분에 다시 초심으로 공부 시작</li></ul><h4><span id="bad">bad</span></h4><ul><li>계획 세우고 공부하자 :(</li></ul><hr><h2><span id="내일-할-일">내일 할 일</span></h2><ul><li>알고리즘 공부</li><li>알고리즘 문제풀이 minimum 2시간</li><li>머신러닝 복습</li><li>머신러닝 프로젝트 아이디어 구상</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;&lt;span id=&quot;오늘-한-일&quot;&gt;오늘 한 일&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;동빈나&lt;/code&gt; youtube 강의
+&lt;ul&gt;
+&lt;li&gt;파이썬 기초 내용 복습&lt;/li&gt;
+&lt;li&gt;‘RUR-PLE’ 프로그램 학습&lt;/li&gt;
+&lt;li&gt;‘Num
+      
+    
+    </summary>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/categories/TIL/"/>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
+    
+      <category term="인문학도개발일지" scheme="http://yoursite-url/tags/%EC%9D%B8%EB%AC%B8%ED%95%99%EB%8F%84%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    
+      <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="python" scheme="http://yoursite-url/tags/python/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
+    
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="rurple" scheme="http://yoursite-url/tags/rurple/"/>
+    
+  </entry>
   
   <entry>
     <title>[알고리즘] 완주하지 못한 선수</title>
@@ -263,11 +309,11 @@
     
       <category term="by_Mel" scheme="http://yoursite-url/tags/by-Mel/"/>
     
+      <category term="python_while" scheme="http://yoursite-url/tags/python-while/"/>
+    
       <category term="파이썬반복문" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EB%B0%98%EB%B3%B5%EB%AC%B8/"/>
     
       <category term="점프투파이썬" scheme="http://yoursite-url/tags/%EC%A0%90%ED%94%84%ED%88%AC%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
-    
-      <category term="python_while" scheme="http://yoursite-url/tags/python-while/"/>
     
   </entry>
   
@@ -303,11 +349,11 @@
     
       <category term="by_Mel" scheme="http://yoursite-url/tags/by-Mel/"/>
     
-      <category term="python_for_in" scheme="http://yoursite-url/tags/python-for-in/"/>
-    
       <category term="파이썬반복문" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EB%B0%98%EB%B3%B5%EB%AC%B8/"/>
     
       <category term="점프투파이썬" scheme="http://yoursite-url/tags/%EC%A0%90%ED%94%84%ED%88%AC%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="python_for_in" scheme="http://yoursite-url/tags/python-for-in/"/>
     
   </entry>
   
