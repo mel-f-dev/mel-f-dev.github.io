@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
-  <updated>2019-12-17T12:10:50.317Z</updated>
+  <updated>2019-12-17T14:17:52.238Z</updated>
   <id>http://yoursite-url/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[알고리즘] Python 백준알고리즘10817</title>
+    <title>[알고리즘] Python 백준알고리즘2739</title>
+    <link href="http://yoursite-url/2019/12/17/1d1A-191217-1/"/>
+    <id>http://yoursite-url/2019/12/17/1d1A-191217-1/</id>
+    <published>2019-12-17T14:09:04.000Z</published>
+    <updated>2019-12-17T14:17:52.238Z</updated>
+    
+    <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오. 출력 형식에 맞춰서 출력하면 된다.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 N이 주어진다. N은 1보다 크거나 같고, 9보다 작거나 같다.</p><hr><h3><span id="출력">출력</span></h3><p>출력형식과 같게 N<em>1부터 N</em>9까지 출력한다.</p><hr><h3><span id="풀이">풀이</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = int(input().strip(<span class="string">""</span>))    <span class="comment"># strip: 혹시 있을 공백 제거</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125; * &#123;&#125; = &#123;&#125;"</span>.format(a, i, a*i))</span><br><span class="line">    <span class="comment"># print("%d * %d = %d" %(a, i, a*i))도 가능</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3&gt;&lt;span id=&quot;문제&quot;&gt;문제&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오. 출력 형식에 맞춰서 출력하면 된다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;span id=&quot;입력&quot;&gt;입력&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;첫째
+      
+    
+    </summary>
+    
+    
+      <category term="알고리즘 문제풀이" scheme="http://yoursite-url/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
+    
+      <category term="인문학도개발일지" scheme="http://yoursite-url/tags/%EC%9D%B8%EB%AC%B8%ED%95%99%EB%8F%84%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    
+      <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="python" scheme="http://yoursite-url/tags/python/"/>
+    
+      <category term="백준알고리즘" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="for문" scheme="http://yoursite-url/tags/for%EB%AC%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[알고리즘] Python 백준알고리즘 10817</title>
     <link href="http://yoursite-url/2019/12/17/1d1A-191217/"/>
     <id>http://yoursite-url/2019/12/17/1d1A-191217/</id>
     <published>2019-12-17T11:24:21.000Z</published>
-    <updated>2019-12-17T12:10:50.317Z</updated>
+    <updated>2019-12-17T14:10:08.880Z</updated>
     
     <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>세 정수 A, B, C가 주어진다. 이때, <strong>두 번째로 큰 정수</strong>를 출력하는 프로그램을 작성하시오.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A, B, C ≤ 100)</p><hr><h3><span id="예제-입력1">예제 입력1</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">20</span> <span class="number">30</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력1">예제 출력1</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure><h4><span id="예제-입력2">예제 입력2</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">30</span> <span class="number">30</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력2">예제 출력2</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">30</span><br></pre></td></tr></table></figure><h4><span id="예제-입력3">예제 입력3</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">40</span> <span class="number">40</span> <span class="number">40</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력3">예제 출력3</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">40</span><br></pre></td></tr></table></figure><h4><span id="예제-입력4">예제 입력4</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">20</span> <span class="number">10</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력4">예제 출력4</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure><hr><h3><span id="풀이1">풀이1</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">X = A, B, C = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line">A = sorted(X)</span><br><span class="line">print(A[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><hr><h3><span id="풀이2">풀이2</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">A, B, C = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line">Min = min(A, B, C)</span><br><span class="line">Max = max(A, B, C)</span><br><span class="line"></span><br><span class="line">print(A + B + C - Min - Max)</span><br></pre></td></tr></table></figure><hr><h3><span id="출처">출처</span></h3><p><a href="https://www.acmicpc.net/problem/10817" target="_blank" rel="noopener">백준알고리즘</a></p>]]></content>
     
@@ -139,9 +183,9 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
-    
       <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
+    
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
     
       <category term="rurple" scheme="http://yoursite-url/tags/rurple/"/>
     
@@ -225,9 +269,9 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
-    
       <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
+    
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
     
       <category term="pandas" scheme="http://yoursite-url/tags/pandas/"/>
     
@@ -269,11 +313,11 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
       <category term="women_who_code" scheme="http://yoursite-url/tags/women-who-code/"/>
     
       <category term="google analytics" scheme="http://yoursite-url/tags/google-analytics/"/>
-    
-      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
     
   </entry>
   
@@ -314,9 +358,9 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
-    
       <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
+    
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
     
   </entry>
   
