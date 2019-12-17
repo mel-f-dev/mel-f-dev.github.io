@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
-  <updated>2019-12-11T12:52:51.164Z</updated>
+  <updated>2019-12-17T11:48:48.655Z</updated>
   <id>http://yoursite-url/</id>
   
   <author>
@@ -17,11 +17,97 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[TIL] 20191115</title>
+    <title>[알고리즘] Python 백준알고리즘10817</title>
+    <link href="http://yoursite-url/2019/12/17/1d1A-191217/"/>
+    <id>http://yoursite-url/2019/12/17/1d1A-191217/</id>
+    <published>2019-12-17T11:24:21.000Z</published>
+    <updated>2019-12-17T11:48:48.655Z</updated>
+    
+    <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A, B, C ≤ 100)</p><hr><h3><span id="예제-입력1">예제 입력1</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">20</span> <span class="number">30</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h3><span id="예제-출력1">예제 출력1</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure><h3><span id="예제-입력2">예제 입력2</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">30</span> <span class="number">30</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h3><span id="예제-출력2">예제 출력2</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">30</span><br></pre></td></tr></table></figure><h3><span id="예제-입력3">예제 입력3</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">40</span> <span class="number">40</span> <span class="number">40</span></span><br></pre></td></tr></table></figure><h3><span id="예제-출력3">예제 출력3</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">40</span><br></pre></td></tr></table></figure><h3><span id="예제-입력4">예제 입력4</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">20</span> <span class="number">10</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h3><span id="예제-출력4">예제 출력4</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure><hr><h3><span id="풀이1">풀이1</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">X = A, B, C = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line">A = sorted(X)</span><br><span class="line">print(A[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><hr><h3><span id="풀이2">풀이2</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">A, B, C = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line">Min = min(A, B, C)</span><br><span class="line">Max = max(A, B, C)</span><br><span class="line"></span><br><span class="line">print(A + B + C - Min - Max)</span><br></pre></td></tr></table></figure><hr><h3><span id="출처">출처</span></h3><p><a href="https://www.acmicpc.net/problem/10817" target="_blank" rel="noopener">백준알고리즘</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3&gt;&lt;span id=&quot;문제&quot;&gt;문제&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;span id=&quot;입력&quot;&gt;입력&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;첫째 줄에
+      
+    
+    </summary>
+    
+    
+      <category term="알고리즘 문제풀이" scheme="http://yoursite-url/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
+    
+      <category term="인문학도개발일지" scheme="http://yoursite-url/tags/%EC%9D%B8%EB%AC%B8%ED%95%99%EB%8F%84%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    
+      <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="python" scheme="http://yoursite-url/tags/python/"/>
+    
+      <category term="프로그래머스" scheme="http://yoursite-url/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"/>
+    
+      <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="if문" scheme="http://yoursite-url/tags/if%EB%AC%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[알고리즘] Python 백준알고리즘2884</title>
+    <link href="http://yoursite-url/2019/12/16/1d1A-%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-191216/"/>
+    <id>http://yoursite-url/2019/12/16/1d1A-%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-191216/</id>
+    <published>2019-12-16T10:53:00.000Z</published>
+    <updated>2019-12-17T11:48:50.521Z</updated>
+    
+    <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.</p><p>상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.</p><p>이런 상근이를 불쌍하게 보던, 창영이는 자신이 사용하는 방법을 추천해 주었다.</p><p>바로 &quot;45분 일찍 알람 맞추기&quot;이다.</p><p>이 방법은 단순하다. 원래 맞춰져있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.</p><h2><span id="현재-상근이가-맞춰논-알람-시각이-주어졌을-때-창영이의-방법을-사용한다면-이를-언제로-고쳐야-하는지-구하는-프로그램을-작성하시오">현재 상근이가 맞춰논 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.</span></h2><h3><span id="입력">입력</span></h3><p>첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 그리고 이것은 현재 상근이가 맞춰놓은 알람 시간 H시 M분을 의미한다.</p><h2><span id="입력-시간은-24시간-표현을-사용한다-24시간-표현에서-하루의-시작은-00자정이고-끝은-2359다음날-자정-1분-전이다-시간을-나타낼-때-불필요한-0은-사용하지-않는다">입력 시간은 24시간 표현을 사용한다. 24시간 표현에서 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다. 시간을 나타낼 때, 불필요한 0은 사용하지 않는다.</span></h2><h3><span id="풀이">풀이</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C = input().split(<span class="string">" "</span>)    <span class="comment"># 입력값을 공백으로 구분</span></span><br><span class="line">H = int(C[<span class="number">0</span>])    <span class="comment"># 리스트C 첫번째 인덱스 숫자</span></span><br><span class="line">M = int(C[<span class="number">1</span>])    <span class="comment"># 리스트C 두번째 인덱스 숫자</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> H == <span class="number">0</span>:</span><br><span class="line">    H = <span class="number">24</span>    <span class="comment"># 자정을 24로 치환하여 계산</span></span><br><span class="line"><span class="keyword">if</span> M &lt; <span class="number">45</span>: </span><br><span class="line">    print(H<span class="number">-1</span>, M+<span class="number">15</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(H, M<span class="number">-45</span>)</span><br></pre></td></tr></table></figure><h3><span id="출처">출처</span></h3><p><a href="https://www.acmicpc.net/problem/2884" target="_blank" rel="noopener">백준 알고리즘</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3&gt;&lt;span id=&quot;문제&quot;&gt;문제&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.&lt;/p&gt;
+&lt;p&gt;상근이는 모든 방법을 동원
+      
+    
+    </summary>
+    
+    
+      <category term="알고리즘 문제풀이" scheme="http://yoursite-url/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
+    
+      <category term="인문학도개발일지" scheme="http://yoursite-url/tags/%EC%9D%B8%EB%AC%B8%ED%95%99%EB%8F%84%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    
+      <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="python" scheme="http://yoursite-url/tags/python/"/>
+    
+      <category term="프로그래머스" scheme="http://yoursite-url/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"/>
+    
+      <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="if문" scheme="http://yoursite-url/tags/if%EB%AC%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[TIL] 20191211</title>
     <link href="http://yoursite-url/2019/12/11/TIL-20191211/"/>
     <id>http://yoursite-url/2019/12/11/TIL-20191211/</id>
     <published>2019-12-11T12:36:44.000Z</published>
-    <updated>2019-12-11T12:52:51.164Z</updated>
+    <updated>2019-12-14T07:25:57.534Z</updated>
     
     <content type="html"><![CDATA[<h2><span id="오늘-한-일">오늘 한 일</span></h2><ul><li><code>동빈나</code> youtube 강의<ul><li>파이썬 기초 내용 복습</li><li>‘RUR-PLE’ 프로그램 학습</li><li>‘NumPy’ 기본 내용 복습</li></ul></li><li>머신러닝 수업내용 복습 조금</li><li>백준 알고리즘 쉬운 것 부터 다시(블로그에 정리 예정)</li></ul><h4><span id="good">good</span></h4><ul><li>뜻밖의 휴가 덕분에 다시 초심으로 공부 시작</li></ul><h4><span id="bad">bad</span></h4><ul><li>계획 세우고 공부하자 :(</li></ul><hr><h2><span id="내일-할-일">내일 할 일</span></h2><ul><li>알고리즘 공부</li><li>알고리즘 문제풀이 minimum 2시간</li><li>머신러닝 복습</li><li>머신러닝 프로젝트 아이디어 구상</li></ul>]]></content>
     
@@ -54,9 +140,9 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
-    
       <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
     
       <category term="rurple" scheme="http://yoursite-url/tags/rurple/"/>
     
@@ -95,11 +181,11 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
       <category term="프로그래머스" scheme="http://yoursite-url/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"/>
     
       <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
   </entry>
   
@@ -140,9 +226,9 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
-    
       <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
     
       <category term="pandas" scheme="http://yoursite-url/tags/pandas/"/>
     
@@ -184,11 +270,11 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
-    
       <category term="women_who_code" scheme="http://yoursite-url/tags/women-who-code/"/>
     
       <category term="google analytics" scheme="http://yoursite-url/tags/google-analytics/"/>
+    
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
     
   </entry>
   
@@ -229,9 +315,9 @@
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
-    
       <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
     
   </entry>
   
@@ -269,11 +355,11 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
       <category term="jupyter notebook" scheme="http://yoursite-url/tags/jupyter-notebook/"/>
     
       <category term="webcrawling" scheme="http://yoursite-url/tags/webcrawling/"/>
-    
-      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
   </entry>
   
@@ -309,11 +395,11 @@
     
       <category term="by_Mel" scheme="http://yoursite-url/tags/by-Mel/"/>
     
-      <category term="python_while" scheme="http://yoursite-url/tags/python-while/"/>
-    
       <category term="파이썬반복문" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EB%B0%98%EB%B3%B5%EB%AC%B8/"/>
     
       <category term="점프투파이썬" scheme="http://yoursite-url/tags/%EC%A0%90%ED%94%84%ED%88%AC%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="python_while" scheme="http://yoursite-url/tags/python-while/"/>
     
   </entry>
   
@@ -349,11 +435,11 @@
     
       <category term="by_Mel" scheme="http://yoursite-url/tags/by-Mel/"/>
     
+      <category term="python_for_in" scheme="http://yoursite-url/tags/python-for-in/"/>
+    
       <category term="파이썬반복문" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EB%B0%98%EB%B3%B5%EB%AC%B8/"/>
     
       <category term="점프투파이썬" scheme="http://yoursite-url/tags/%EC%A0%90%ED%94%84%ED%88%AC%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
-    
-      <category term="python_for_in" scheme="http://yoursite-url/tags/python-for-in/"/>
     
   </entry>
   
@@ -390,9 +476,9 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="webcrawling" scheme="http://yoursite-url/tags/webcrawling/"/>
-    
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="webcrawling" scheme="http://yoursite-url/tags/webcrawling/"/>
     
       <category term="주피터노트북" scheme="http://yoursite-url/tags/%EC%A3%BC%ED%94%BC%ED%84%B0%EB%85%B8%ED%8A%B8%EB%B6%81/"/>
     
@@ -429,9 +515,9 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="webcrawling" scheme="http://yoursite-url/tags/webcrawling/"/>
-    
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="webcrawling" scheme="http://yoursite-url/tags/webcrawling/"/>
     
       <category term="주피터노트북" scheme="http://yoursite-url/tags/%EC%A3%BC%ED%94%BC%ED%84%B0%EB%85%B8%ED%8A%B8%EB%B6%81/"/>
     
