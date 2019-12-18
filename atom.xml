@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
-  <updated>2019-12-17T14:17:52.238Z</updated>
+  <updated>2019-12-18T07:12:08.970Z</updated>
   <id>http://yoursite-url/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[알고리즘] Python 백준알고리즘2739</title>
+    <title>Python 백준알고리즘10950</title>
+    <link href="http://yoursite-url/2019/12/18/1d1A-191218/"/>
+    <id>http://yoursite-url/2019/12/18/1d1A-191218/</id>
+    <published>2019-12-18T06:24:52.000Z</published>
+    <updated>2019-12-18T07:12:08.970Z</updated>
+    
+    <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 테스트 케이스의 개수 T가 주어진다.</p><p>각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10)</p><hr><h3><span id="출력">출력</span></h3><p>각 테스트 케이스마다 A+B를 출력한다.</p><hr><h3><span id="예제-입력1">예제 입력1</span></h3><p>5<br>1 1<br>2 3<br>3 4<br>9 8<br>5 2</p><hr><h3><span id="예제-출력1">예제 출력1</span></h3><p>2<br>5<br>7<br>17<br>7</p><hr><h3><span id="풀이">풀이</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">T = int(input())</span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> range(<span class="number">1</span>, T+<span class="number">1</span>):</span><br><span class="line">    A, B = map(int, input().split(<span class="string">" "</span>))    <span class="comment"># strip, split 잘못 쓰지마!</span></span><br><span class="line">    print(A + B)</span><br></pre></td></tr></table></figure><hr><h3><span id="출처">출처</span></h3><p><a href="https://www.acmicpc.net/problem/10950" target="_blank" rel="noopener">백준 알고리즘</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3&gt;&lt;span id=&quot;문제&quot;&gt;문제&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;&lt;span id=&quot;입력&quot;&gt;입력&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;첫째 줄에 테스트 케이스의 개
+      
+    
+    </summary>
+    
+    
+      <category term="알고리즘 문제풀이" scheme="http://yoursite-url/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
+    
+      <category term="인문학도개발일지" scheme="http://yoursite-url/tags/%EC%9D%B8%EB%AC%B8%ED%95%99%EB%8F%84%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    
+      <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="백준알고리즘10950파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9810950%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
+      <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 백준알고리즘2739</title>
     <link href="http://yoursite-url/2019/12/17/1d1A-191217-1/"/>
     <id>http://yoursite-url/2019/12/17/1d1A-191217-1/</id>
     <published>2019-12-17T14:09:04.000Z</published>
-    <updated>2019-12-17T14:17:52.238Z</updated>
+    <updated>2019-12-18T07:11:30.714Z</updated>
     
     <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오. 출력 형식에 맞춰서 출력하면 된다.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 N이 주어진다. N은 1보다 크거나 같고, 9보다 작거나 같다.</p><hr><h3><span id="출력">출력</span></h3><p>출력형식과 같게 N<em>1부터 N</em>9까지 출력한다.</p><hr><h3><span id="풀이">풀이</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = int(input().strip(<span class="string">""</span>))    <span class="comment"># strip: 혹시 있을 공백 제거</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">    print(<span class="string">"&#123;&#125; * &#123;&#125; = &#123;&#125;"</span>.format(a, i, a*i))</span><br><span class="line">    <span class="comment"># print("%d * %d = %d" %(a, i, a*i))도 가능</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -48,24 +90,22 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
-      <category term="python" scheme="http://yoursite-url/tags/python/"/>
-    
-      <category term="백준알고리즘" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
-      <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
-      <category term="for문" scheme="http://yoursite-url/tags/for%EB%AC%B8/"/>
+      <category term="백준알고리즘2739파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%982739%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
+      <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
   </entry>
   
   <entry>
-    <title>[알고리즘] Python 백준알고리즘 10817</title>
+    <title>Python 백준알고리즘 10817</title>
     <link href="http://yoursite-url/2019/12/17/1d1A-191217/"/>
     <id>http://yoursite-url/2019/12/17/1d1A-191217/</id>
     <published>2019-12-17T11:24:21.000Z</published>
-    <updated>2019-12-17T14:10:08.880Z</updated>
+    <updated>2019-12-18T07:11:31.347Z</updated>
     
     <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>세 정수 A, B, C가 주어진다. 이때, <strong>두 번째로 큰 정수</strong>를 출력하는 프로그램을 작성하시오.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A, B, C ≤ 100)</p><hr><h3><span id="예제-입력1">예제 입력1</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">20</span> <span class="number">30</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력1">예제 출력1</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20</span><br></pre></td></tr></table></figure><h4><span id="예제-입력2">예제 입력2</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">30</span> <span class="number">30</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력2">예제 출력2</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">30</span><br></pre></td></tr></table></figure><h4><span id="예제-입력3">예제 입력3</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">40</span> <span class="number">40</span> <span class="number">40</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력3">예제 출력3</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">40</span><br></pre></td></tr></table></figure><h4><span id="예제-입력4">예제 입력4</span></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">20</span> <span class="number">10</span> <span class="number">10</span></span><br></pre></td></tr></table></figure><h4><span id="예제-출력4">예제 출력4</span></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure><hr><h3><span id="풀이1">풀이1</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">X = A, B, C = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line">A = sorted(X)</span><br><span class="line">print(A[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><hr><h3><span id="풀이2">풀이2</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">A, B, C = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line">Min = min(A, B, C)</span><br><span class="line">Max = max(A, B, C)</span><br><span class="line"></span><br><span class="line">print(A + B + C - Min - Max)</span><br></pre></td></tr></table></figure><hr><h3><span id="출처">출처</span></h3><p><a href="https://www.acmicpc.net/problem/10817" target="_blank" rel="noopener">백준알고리즘</a></p>]]></content>
     
@@ -91,15 +131,13 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
-      <category term="python" scheme="http://yoursite-url/tags/python/"/>
-    
-      <category term="if문" scheme="http://yoursite-url/tags/if%EB%AC%B8/"/>
-    
-      <category term="백준알고리즘" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
-      <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="백준알고리즘10817파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9810817%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="python if문" scheme="http://yoursite-url/tags/python-if%EB%AC%B8/"/>
+    
+      <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
   </entry>
   
@@ -108,7 +146,7 @@
     <link href="http://yoursite-url/2019/12/16/1d1A-%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-191216/"/>
     <id>http://yoursite-url/2019/12/16/1d1A-%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-191216/</id>
     <published>2019-12-16T10:53:00.000Z</published>
-    <updated>2019-12-17T12:12:39.022Z</updated>
+    <updated>2019-12-18T06:54:47.144Z</updated>
     
     <content type="html"><![CDATA[<h3><span id="문제">문제</span></h3><p>상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.</p><p>상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.</p><p>이런 상근이를 불쌍하게 보던, 창영이는 자신이 사용하는 방법을 추천해 주었다.</p><p>바로 &quot;<strong>45분 일찍 알람 맞추기</strong>&quot;이다.</p><p>이 방법은 단순하다. 원래 맞춰져있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.</p><p>현재 상근이가 맞춰논 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.</p><hr><h3><span id="입력">입력</span></h3><p>첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 그리고 이것은 현재 상근이가 맞춰놓은 알람 시간 H시 M분을 의미한다.</p><p>입력 시간은 <strong>24시간 표현을 사용</strong>한다. 24시간 표현에서 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다. 시간을 나타낼 때, 불필요한 0은 사용하지 않는다.</p><hr><h3><span id="풀이">풀이</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C = input().split(<span class="string">" "</span>)    <span class="comment"># 입력값을 공백으로 구분</span></span><br><span class="line">H = int(C[<span class="number">0</span>])    <span class="comment"># 리스트C 첫번째 인덱스 숫자</span></span><br><span class="line">M = int(C[<span class="number">1</span>])    <span class="comment"># 리스트C 두번째 인덱스 숫자</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> H == <span class="number">0</span>:</span><br><span class="line">    H = <span class="number">24</span>    <span class="comment"># 자정을 24로 치환하여 계산</span></span><br><span class="line"><span class="keyword">if</span> M &lt; <span class="number">45</span>: </span><br><span class="line">    print(H<span class="number">-1</span>, M+<span class="number">15</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(H, M<span class="number">-45</span>)</span><br></pre></td></tr></table></figure><hr><h3><span id="출처">출처</span></h3><p><a href="https://www.acmicpc.net/problem/2884" target="_blank" rel="noopener">백준 알고리즘</a></p>]]></content>
     
@@ -135,13 +173,13 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="if문" scheme="http://yoursite-url/tags/if%EB%AC%B8/"/>
-    
       <category term="백준알고리즘" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="알고리즘" scheme="http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="if문" scheme="http://yoursite-url/tags/if%EB%AC%B8/"/>
     
   </entry>
   
