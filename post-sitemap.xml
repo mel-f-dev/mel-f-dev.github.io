@@ -7,24 +7,16 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/2019/12/18/1d1A-191218/</loc>
-        <lastmod>2019-12-18T07:12:08.970Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://yoursite-url/2019/12/17/1d1A-191217/</loc>
-        <lastmod>2019-12-18T07:11:31.347Z</lastmod>
+        <lastmod>2019-12-18T07:20:58.958Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>http://yoursite-url/2019/12/17/1d1A-191217-1/</loc>
-        <lastmod>2019-12-18T07:11:30.714Z</lastmod>
+        <loc>http://yoursite-url/2019/12/18/1d1A-191218/</loc>
+        <lastmod>2019-12-18T07:20:52.588Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -32,7 +24,23 @@
 
     <url>
         <loc>http://yoursite-url/2019/12/16/1d1A-%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-191216/</loc>
-        <lastmod>2019-12-18T06:54:47.144Z</lastmod>
+        <lastmod>2019-12-18T07:20:46.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/12/17/1d1A-191217-1/</loc>
+        <lastmod>2019-12-18T07:20:40.581Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/11/25/Al-20191125/</loc>
+        <lastmod>2019-12-18T07:20:25.195Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,14 +49,6 @@
     <url>
         <loc>http://yoursite-url/2019/12/11/TIL-20191211/</loc>
         <lastmod>2019-12-14T07:25:57.534Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/11/25/Al-20191125/</loc>
-        <lastmod>2019-11-25T11:54:55.052Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
