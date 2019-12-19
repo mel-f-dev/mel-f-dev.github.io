@@ -93,11 +93,11 @@
                             
                               <a class="tag" href="/tags/#괴발개발" title="괴발개발">괴발개발</a>
                             
+                              <a class="tag" href="/tags/#python if문" title="python if문">python if문</a>
+                            
                               <a class="tag" href="/tags/#파이썬 알고리즘" title="파이썬 알고리즘">파이썬 알고리즘</a>
                             
                               <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
-                            
-                              <a class="tag" href="/tags/#python if문" title="python if문">python if문</a>
                             
                               <a class="tag" href="/tags/#백준알고리즘 2884 파이썬" title="백준알고리즘 2884 파이썬">백준알고리즘 2884 파이썬</a>
                             
@@ -223,7 +223,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h3><span id="문제">문제</span></h3>
+                <h3 id="문제">문제</h3>
 <p>상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.</p>
 <p>상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.</p>
 <p>이런 상근이를 불쌍하게 보던, 창영이는 자신이 사용하는 방법을 추천해 주었다.</p>
@@ -231,14 +231,14 @@
 <p>이 방법은 단순하다. 원래 맞춰져있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.</p>
 <p>현재 상근이가 맞춰논 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.</p>
 <hr>
-<h3><span id="입력">입력</span></h3>
+<h3 id="입력">입력</h3>
 <p>첫째 줄에 두 정수 H와 M이 주어진다. (0 ≤ H ≤ 23, 0 ≤ M ≤ 59) 그리고 이것은 현재 상근이가 맞춰놓은 알람 시간 H시 M분을 의미한다.</p>
 <p>입력 시간은 <strong>24시간 표현을 사용</strong>한다. 24시간 표현에서 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다. 시간을 나타낼 때, 불필요한 0은 사용하지 않는다.</p>
 <hr>
-<h3><span id="풀이">풀이</span></h3>
+<h3 id="풀이">풀이</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C = input().split(<span class="string">" "</span>)    <span class="comment"># 입력값을 공백으로 구분</span></span><br><span class="line">H = int(C[<span class="number">0</span>])    <span class="comment"># 리스트C 첫번째 인덱스 숫자</span></span><br><span class="line">M = int(C[<span class="number">1</span>])    <span class="comment"># 리스트C 두번째 인덱스 숫자</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> H == <span class="number">0</span>:</span><br><span class="line">    H = <span class="number">24</span>    <span class="comment"># 자정을 24로 치환하여 계산</span></span><br><span class="line"><span class="keyword">if</span> M &lt; <span class="number">45</span>: </span><br><span class="line">    print(H<span class="number">-1</span>, M+<span class="number">15</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(H, M<span class="number">-45</span>)</span><br></pre></td></tr></table></figure>
 <hr>
-<h3><span id="출처">출처</span></h3>
+<h3 id="출처">출처</h3>
 <p><a href="https://www.acmicpc.net/problem/2884" target="_blank" rel="noopener">백준 알고리즘</a></p>
 
                 
@@ -280,7 +280,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">입력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">출처</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#문제"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#입력"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">입력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#풀이"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#출처"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">출처</span></a></li></ol>
         
         </div>
       </aside>
@@ -306,11 +306,11 @@
                         
                           <a class="tag" href="/tags/#괴발개발" title="괴발개발">괴발개발</a>
                         
+                          <a class="tag" href="/tags/#python if문" title="python if문">python if문</a>
+                        
                           <a class="tag" href="/tags/#파이썬 알고리즘" title="파이썬 알고리즘">파이썬 알고리즘</a>
                         
                           <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
-                        
-                          <a class="tag" href="/tags/#python if문" title="python if문">python if문</a>
                         
                           <a class="tag" href="/tags/#백준알고리즘 2884 파이썬" title="백준알고리즘 2884 파이썬">백준알고리즘 2884 파이썬</a>
                         

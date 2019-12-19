@@ -7,16 +7,24 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/2019/12/17/1d1A-191217/</loc>
-        <lastmod>2019-12-18T07:20:58.958Z</lastmod>
+        <loc>http://yoursite-url/2019/12/18/1d1A-191218/</loc>
+        <lastmod>2019-12-19T11:25:05.977Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>http://yoursite-url/2019/12/18/1d1A-191218/</loc>
-        <lastmod>2019-12-18T07:20:52.588Z</lastmod>
+        <loc>http://yoursite-url/2019/12/19/1d1A-191219/</loc>
+        <lastmod>2019-12-19T07:12:41.092Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/12/17/1d1A-191217/</loc>
+        <lastmod>2019-12-18T07:20:58.958Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
