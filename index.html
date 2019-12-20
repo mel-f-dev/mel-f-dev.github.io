@@ -210,6 +210,38 @@
 
 <div class="post-preview">
 
+    <a href="/2019/12/20/1d1A-191220/">
+        <h2 class="post-title">
+            [Python] 백준알고리즘 15552
+        </h2>
+        <h3 class="post-subtitle">
+            단계별로 풀어보기-for문
+        </h3>
+        <div class="post-content-preview">
+            문제
+
+
+빠른 A+B
+
+
+본격적으로 for문 문제를 풀기 전에 주의해야 할 점이 있다. 입출력 방식이 느리면 여러 줄을 입력받거나 출력할 때 시간초과가 날 수 있다는 점이다.
+
+
+Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 수 있다. 단, 이때는 맨 끝의 개행문자까지 같이 입력받기 때문에 문자열을 저장하고......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Mel on
+            2019-12-20
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/2019/12/19/1d1A-191219/">
         <h2 class="post-title">
             [Python] 백준알고리즘 8393
@@ -218,22 +250,24 @@
             단계별로 풀어보기-for문
         </h3>
         <div class="post-content-preview">
-            문제#
+            문제
 n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
 
-입력#
+입력
 첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.
 
-출력#
+출력
 1부터 n까지 합을 출력한다.
 
-예제 입력#
+예제 입력
 3
-예제 출력#
+예제 출력
 6
 
-풀이#
-12345n = int(input().strip())S = 0for i in range(1, n+1):    S+=iprint(......
+풀이
+12345n = int(input().strip())S = 0for i in range(1, n+1):    S+=iprint(S)
+
+출처......
         </div>
     </a>
     
@@ -256,22 +290,23 @@ n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성�
             단계별로 풀어보기-for문
         </h3>
         <div class="post-content-preview">
-            문제#
+            문제
 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
 
-입력#
+입력
 첫째 줄에 테스트 케이스의 개수 T가 주어진다.
 각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 &lt; A, B &lt; 10)
 
-출력#
+출력
 각 테스트 케이스마다 A+B를 출력한다.
 
-예제 입력1#
+예제 입력1
 5
 1 1
 2 3
 3 4
-9 ......
+9 8
+5 ......
         </div>
     </a>
     
@@ -294,17 +329,17 @@ n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성�
             단계별로 풀어보기-for문
         </h3>
         <div class="post-content-preview">
-            문제#
+            문제
 N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오. 출력 형식에 맞춰서 출력하면 된다.
 
-입력#
+입력
 첫째 줄에 N이 주어진다. N은 1보다 크거나 같고, 9보다 작거나 같다.
 
-출력#
+출력
 출력형식과 같게 N1부터 N9까지 출력한다.
 
-풀이#
-12345a = int(input().strip(""))    # strip: 혹시 있을 공백 제......
+풀이
+12345a = int(input().strip(""))    # strip: 혹시 있을 공백 제거for......
         </div>
     </a>
     
@@ -327,22 +362,23 @@ N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하�
             단계별로 풀어보기-if문
         </h3>
         <div class="post-content-preview">
-            문제#
+            문제
 세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오.
 
-입력#
+입력
 첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A, B, C ≤ 100)
 
-예제 입력1#
+예제 입력1
 120 30 10
-예제 출력1#
+예제 출력1
 120
-예제 입력2#
+예제 입력2
 130 30 10
-예제 출력2#
+예제 출력2
 130
-예제 입력3#
-140 40 40......
+예제 입력3
+140 40 40
+예제 출력3......
         </div>
     </a>
     
@@ -365,11 +401,11 @@ N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하�
             단계별로 풀어보기-if문
         </h3>
         <div class="post-content-preview">
-            문제#
+            문제
 상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.
 상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.
 이런 상근이를 불쌍하게 보던, 창영이는 자신이 사용하는 방법을 추천해 주었다.
-바로 &quot;45분......
+바로 &quot;45분 ......
         </div>
     </a>
     
@@ -392,7 +428,7 @@ N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하�
             
         </h3>
         <div class="post-content-preview">
-            오늘 한 일#
+            오늘 한 일
 
 동빈나 youtube 강의
 
@@ -404,19 +440,19 @@ N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하�
 머신러닝 수업내용 복습 조금
 백준 알고리즘 쉬운 것 부터 다시(블로그에 정리 예정)
 
-good#
+good
 
 뜻밖의 휴가 덕분에 다시 초심으로 공부 시작
 
-bad#
+bad
 
 계획 세우고 공부하자 :(
 
 
-내일 할 일#
+내일 할 일
 
 알고리즘 공부
-알......
+알고리즘 ......
         </div>
     </a>
     
@@ -439,12 +475,13 @@ bad#
             프로그래머스 python level-1
         </h3>
         <div class="post-content-preview">
-            문제#
+            문제
 수많은 마라톤 선수들이 마라톤에 참여하였습니다.
 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.
 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.
 
-제한사항......
+제한사항
+......
         </div>
     </a>
     
@@ -467,7 +504,7 @@ bad#
             범용함수 및 주요함수, 브로드 캐스팅
         </h3>
         <div class="post-content-preview">
-            오늘#
+            오늘
 
 빅데이터 수업
 
@@ -475,7 +512,7 @@ bad#
 10:10~11:08 : 단항 범용함수, 이항 범용함수, 누적연산함수 reduce()
 11:30~12:10 : 누적연산함수 accumulate(), 기술통계함수
 12:28~12:50 : 기술통계함수
-14:12~14:47 : 기술통계......
+14:12~14:47 : 기술통계함......
         </div>
     </a>
     
@@ -498,7 +535,7 @@ bad#
             GA 
         </h3>
         <div class="post-content-preview">
-            오늘#
+            오늘
 
 프로그래머스 알고리즘 하나 풀다가 실패했다.
 백준 알고리즘 “Hello World!” 출력 문제 정답률이 40%인 이유는 해보면 안다.
@@ -509,54 +546,13 @@ CodeAmeba 블로그
 
 Women Who Code Seoul 행사에 참여했다.
 
-데이터사이언스, 백엔드, 프론트엔드 개발자 등 다양한 분야에서 커리어를 쌓고 새로운 길을 ......
+데이터사이언스, 백엔드, 프론트엔드 개발자 등 다양한 분야에서 커리어를 쌓고 새로운 길을 만......
         </div>
     </a>
     
         <p class="post-meta">
             Posted by Mel on
             2019-11-16
-        </p>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/2019/11/15/TIL-20191115/">
-        <h2 class="post-title">
-            [TIL] 20191115 Numpy
-        </h2>
-        <h3 class="post-subtitle">
-            blog 업그뤠이드!
-        </h3>
-        <div class="post-content-preview">
-            오늘 한 일#
-
-numpy 기본개념 수업을 들었다. 어려워…
-블로그 개선! 댓글 기능을 달았다.
-ADsP 공부
-스터디 머신러닝 책 구입
-
-good#
-
-Utterances를 활용해서 블로그에 댓글 기능을 더했다.
-
-덕분에 컴포넌트라는 기능에 대해 알게 됨
-참고 : Yun Blog
-
-
-
-bad#
-
-ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
-        </div>
-    </a>
-    
-        <p class="post-meta">
-            Posted by Mel on
-            2019-11-15
         </p>
     
 
@@ -599,35 +595,33 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
     <div class="tags">
         
             
-            <a href="/tags/#TIL" title="TIL" rel="15">TIL</a>
+            <a href="/tags/#TIL" title="TIL" rel="16">TIL</a>
             
         
             
-            <a href="/tags/#인문학도개발일지" title="인문학도개발일지" rel="11">인문학도개발일지</a>
+            <a href="/tags/#인문학도개발일지" title="인문학도개발일지" rel="12">인문학도개발일지</a>
             
         
             
-            <a href="/tags/#괴발개발" title="괴발개발" rel="11">괴발개발</a>
+            <a href="/tags/#괴발개발" title="괴발개발" rel="12">괴발개발</a>
             
         
             
-            <a href="/tags/#python for문" title="python for문" rel="3">python for문</a>
-            
-        
-            
-        
-            
-            <a href="/tags/#파이썬 알고리즘" title="파이썬 알고리즘" rel="5">파이썬 알고리즘</a>
-            
-        
-            
-            <a href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel" rel="13">Today_I_Learned_by_Mel</a>
+            <a href="/tags/#python for문" title="python for문" rel="4">python for문</a>
             
         
             
         
             
-            <a href="/tags/#python if문" title="python if문" rel="2">python if문</a>
+            <a href="/tags/#파이썬 알고리즘" title="파이썬 알고리즘" rel="6">파이썬 알고리즘</a>
+            
+        
+            
+            <a href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel" rel="14">Today_I_Learned_by_Mel</a>
+            
+        
+            
+        
             
         
             
@@ -643,9 +637,13 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
             
         
             
+            <a href="/tags/#python if문" title="python if문" rel="2">python if문</a>
+            
         
             
         
+            
+            <a href="/tags/#numpy" title="numpy" rel="3">numpy</a>
             
         
             
@@ -659,15 +657,13 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
             
         
             
-            <a href="/tags/#numpy" title="numpy" rel="3">numpy</a>
-            
-        
-            
-        
-            
         
             
             <a href="/tags/#주피터노트북" title="주피터노트북" rel="4">주피터노트북</a>
+            
+        
+            
+        
             
         
             
@@ -686,6 +682,8 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
         
             
             <a href="/tags/#점프투파이썬" title="점프투파이썬" rel="2">점프투파이썬</a>
+            
+        
             
         
             
@@ -742,6 +740,10 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
     <ul>
       
         <li>
+          <a href="/2019/12/20/1d1A-191220/">[Python] 백준알고리즘 15552</a>
+        </li>
+      
+        <li>
           <a href="/2019/12/19/1d1A-191219/">[Python] 백준알고리즘 8393</a>
         </li>
       
@@ -757,10 +759,6 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
           <a href="/2019/12/17/1d1A-191217/">[Python] 백준알고리즘 10817</a>
         </li>
       
-        <li>
-          <a href="/2019/12/16/1d1A-백준알고리즘-191216/">[Python] 백준알고리즘 2884</a>
-        </li>
-      
     </ul>
   </div>
 
@@ -770,7 +768,7 @@ ADsP D-8, 아직도 책 내용을 완벽히 숙지하지 못했다......
 
     <h5>categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TIL/">TIL</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Crawling/">Web Crawling</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/알고리즘-문제풀이/">알고리즘 문제풀이</a><span class="category-list-count">6</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TIL/">TIL</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Web-Crawling/">Web Crawling</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/알고리즘-문제풀이/">알고리즘 문제풀이</a><span class="category-list-count">7</span></li></ul>
     </div>
 
         <hr>

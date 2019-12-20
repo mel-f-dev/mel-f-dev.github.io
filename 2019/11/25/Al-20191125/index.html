@@ -223,12 +223,12 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h3><span id="munje">문제</span><a href="#munje" class="header-anchor">#</a></h3>
+                <h3>문제</h3>
 <p>수많은 마라톤 선수들이 마라톤에 참여하였습니다.<br>
 <strong>단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.</strong></p>
 <p>마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.</p>
 <hr>
-<h3><span id="jehansahang">제한사항</span><a href="#jehansahang" class="header-anchor">#</a></h3>
+<h3>제한사항</h3>
 <ul>
 <li>마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.</li>
 <li>completion의 길이는 participant의 길이보다 1 작습니다.</li>
@@ -236,7 +236,7 @@
 <li>참가자 중에는 동명이인이 있을 수 있습니다.</li>
 </ul>
 <hr>
-<h3><span id="ibculryeog-yeje">입출력 예제</span><a href="#ibculryeog-yeje" class="header-anchor">#</a></h3>
+<h3>입출력 예제</h3>
 <table>
 <thead>
 <tr>
@@ -264,10 +264,10 @@
 </tbody>
 </table>
 <hr>
-<h3><span id="nae-puli">내 풀이</span><a href="#nae-puli" class="header-anchor">#</a></h3>
+<h3>내 풀이</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(participant, completion)</span>:</span> </span><br><span class="line">    <span class="comment"># 동명이인 처리(중복된 이름은 한 명만 완주 처리)</span></span><br><span class="line">    <span class="keyword">if</span> set(participant) == set(completion):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> participant:</span><br><span class="line">            <span class="keyword">if</span> participant.count(i)==<span class="number">2</span>:</span><br><span class="line">                <span class="keyword">return</span> i</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        answer=[]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> participant:</span><br><span class="line">            <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> completion:</span><br><span class="line">                answer.append(i)</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">return</span> answer[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
 <hr>
-<h3><span id="caejeomgyeolgwa">채점결과</span><a href="#caejeomgyeolgwa" class="header-anchor">#</a></h3>
+<h3>채점결과</h3>
 <table>
 <thead>
 <tr>
@@ -297,14 +297,14 @@
 </ul>
 <p>*효율성 : 시간복잡도에 대한 테스트. 프로그래머스에서 언어별로 제한한 실행 시간에 따라 점수 산정.</p>
 <hr>
-<h3><span id="dareunsaram-puli">다른사람 풀이</span><a href="#dareunsaram-puli" class="header-anchor">#</a></h3>
+<h3>다른사람 풀이</h3>
 <p>풀이1</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> collections</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(participant, completion)</span>:</span></span><br><span class="line">    answer = collections.Counter(participant) - collections.Counter(completion)</span><br><span class="line">    <span class="keyword">return</span> list(answer.keys())[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
 <hr>
 <p>풀이2</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">solution</span><span class="params">(participant, completion)</span>:</span></span><br><span class="line">    participant.sort()</span><br><span class="line">    completion.sort()</span><br><span class="line">    <span class="keyword">for</span> p, c <span class="keyword">in</span> zip(participant, completion):</span><br><span class="line">        <span class="keyword">if</span> p != c:</span><br><span class="line">            <span class="keyword">return</span> p</span><br><span class="line">    <span class="keyword">return</span> participant[<span class="number">-1</span>]</span><br></pre></td></tr></table></figure>
 <hr>
-<h3><span id="culceo">출처</span><a href="#culceo" class="header-anchor">#</a></h3>
+<h3>출처</h3>
 <p><a href="https://programmers.co.kr/learn/courses/30/lessons/42576#" target="_blank" rel="noopener">프로그래머스</a><br>
 <a href="http://hsin.hr/coci/archive/2014_2015/contest2_tasks.pdf" target="_blank" rel="noopener">원출처</a></p>
 
@@ -347,7 +347,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제#</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">제한사항#</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">입출력 예제#</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">내 풀이#</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">채점결과#</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">다른사람 풀이#</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">출처#</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">제한사항</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">입출력 예제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">내 풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">채점결과</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">다른사람 풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">출처</span></a></li></ol>
         
         </div>
       </aside>

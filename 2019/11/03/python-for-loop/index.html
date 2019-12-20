@@ -95,11 +95,11 @@
                             
                               <a class="tag" href="/tags/#by_Mel" title="by_Mel">by_Mel</a>
                             
-                              <a class="tag" href="/tags/#python_for_in" title="python_for_in">python_for_in</a>
-                            
                               <a class="tag" href="/tags/#파이썬반복문" title="파이썬반복문">파이썬반복문</a>
                             
                               <a class="tag" href="/tags/#점프투파이썬" title="점프투파이썬">점프투파이썬</a>
+                            
+                              <a class="tag" href="/tags/#python_for_in" title="python_for_in">python_for_in</a>
                             
                         </div>
                         <h1>[python] 반복문 - for문</h1>
@@ -228,33 +228,33 @@
 <p>출처 : <a href="https://wikidocs.net/22" target="_blank" rel="noopener">점프투파이썬-for문</a><br>
 참고 : <a href="https://blog.naver.com/iklues_/221671467901" target="_blank" rel="noopener">Sing Happy Birthday-인문학도개발일지</a></p>
 </blockquote>
-<h1><span id="formun-gibongujo">for문 기본구조</span><a href="#formun-gibongujo" class="header-anchor">#</a></h1>
+<h1>for문 기본구조</h1>
 <hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> 변수 <span class="keyword">in</span> 리스트(또는 튜플, 문자열):</span><br><span class="line">  수행할 문장<span class="number">1</span></span><br><span class="line">  수행할 문장<span class="number">2</span></span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
-<h1><span id="riseuteuwa-formun">리스트와 for문</span><a href="#riseuteuwa-formun" class="header-anchor">#</a></h1>
+<h1>리스트와 for문</h1>
 <hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num_list = [<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> num_list:</span><br><span class="line">  print(i)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;one</span><br><span class="line">&gt;two</span><br><span class="line">&gt;three</span><br></pre></td></tr></table></figure>
 <p>위 코드를 실행하면 num_list의 요소가 순서대로 i에 대입되어 print(i) 문장을 수행하고 리스트 마지막 요소 까지 반복한다.</p>
-<h1><span id="tyupeulgwa-formun">튜플과 for문</span><a href="#tyupeulgwa-formun" class="header-anchor">#</a></h1>
+<h1>튜플과 for문</h1>
 <hr>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">my_tuple = [(<span class="number">1</span>,<span class="number">2</span>), (<span class="number">3</span>,<span class="number">4</span>), (<span class="number">5</span>,<span class="number">6</span>)]</span><br><span class="line"><span class="keyword">for</span> (first, last) <span class="keyword">in</span> a:</span><br><span class="line">  print(first+last)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">3</span></span><br><span class="line">&gt;<span class="number">7</span></span><br><span class="line">&gt;<span class="number">11</span></span><br></pre></td></tr></table></figure>
 <p>튜플의 각각의 요소가 자동으로 (first, last)변수에 대입된다.</p>
-<h1><span id="formun-eungyong">for문 응용</span><a href="#formun-eungyong" class="header-anchor">#</a></h1>
+<h1>for문 응용</h1>
 <hr>
 <p><strong><em>Q. 총 5명의 학생이 시험을 보았는데 시험 점수가 60점이 넘으면 합격이고 그렇지 않으면 불합격이다. 합격인지 불합격인지 결과를 보여 주시오.</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">marks = [<span class="number">90</span>, <span class="number">25</span>, <span class="number">67</span>, <span class="number">45</span>, <span class="number">80</span>]</span><br><span class="line"></span><br><span class="line">number = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> marks:</span><br><span class="line">  number += <span class="number">1</span></span><br><span class="line">  <span class="keyword">if</span> i &gt;= <span class="number">60</span>:</span><br><span class="line">    print(<span class="string">"&#123;&#125;번 학생은 합격입니다."</span>.format(number))</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"&#123;&#125;번 학생은 불합격입니다."</span>.format(number))</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">1</span>번 학생은 합격입니다.</span><br><span class="line">&gt;<span class="number">2</span>번 학생은 불합격입니다.</span><br><span class="line">&gt;<span class="number">3</span>번 학생은 합격입니다.</span><br><span class="line">&gt;<span class="number">4</span>번 학생은 불합격입니다.</span><br><span class="line">&gt;<span class="number">5</span>번 학생은 합격입니다.</span><br></pre></td></tr></table></figure>
-<h1><span id="formungwa-continue">for문과 continue</span><a href="#formungwa-continue" class="header-anchor">#</a></h1>
+<h1>for문과 continue</h1>
 <hr>
 <p>for문 안의 문장을 수행하는 도중 continue문을 만나면 for문의 처음으로 돌아간다.<br>
 <strong><em>Q. 위 문제에서 60점을 넘은 합격자에게 축하 메시지를 보내고 나머지에게는 아무 메시지도 전하지 않는 프로그램을 작성해보자.</em></strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">marks = [<span class="number">90</span>, <span class="number">25</span>, <span class="number">67</span>, <span class="number">45</span>, <span class="number">80</span>]</span><br><span class="line"></span><br><span class="line">number = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> marks:</span><br><span class="line">  number += <span class="number">1</span></span><br><span class="line">  <span class="keyword">if</span> i &lt; <span class="number">60</span>:</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  print(<span class="string">"&#123;&#125;번 학생 축하합니다. 합격입니다."</span>.format(number))</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">1</span>번 학생 축하합니다. 합격입니다.</span><br><span class="line">&gt;<span class="number">3</span>번 학생 축하합니다. 합격입니다.</span><br><span class="line">&gt;<span class="number">5</span>번 학생 축하합니다. 합격입니다.</span><br></pre></td></tr></table></figure>
-<h1><span id="for-in-yeongwan-naejanghamsu">for in 연관 내장함수</span><a href="#for-in-yeongwan-naejanghamsu" class="header-anchor">#</a></h1>
+<h1>for in 연관 내장함수</h1>
 <hr>
-<h2><span id="range">range()</span><a href="#range" class="header-anchor">#</a></h2>
+<h2>range()</h2>
 <ul>
 <li>range([시작값], 멈춤값, [증감값]) : []는 생략 가능</li>
 <li>시작값은 포함, 멈춤값은 포함X</li>
@@ -265,7 +265,7 @@
 <strong><em>Q. 위의 문제를 range함수를 활용해서 해결해보자.</em></strong></li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">marks = [<span class="number">90</span>, <span class="number">25</span>, <span class="number">67</span>, <span class="number">45</span>, <span class="number">80</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(marks)):</span><br><span class="line">  <span class="keyword">if</span> marks[i] &lt; <span class="number">60</span>:</span><br><span class="line">    <span class="keyword">continue</span></span><br><span class="line">  print(<span class="string">"&#123;&#125;번 학생 축하합니다. 합격입니다."</span>.format(i+<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
-<h2><span id="enumerate">enumerate()</span><a href="#enumerate" class="header-anchor">#</a></h2>
+<h2>enumerate()</h2>
 <ul>
 <li>반복 조회시 현재 원소의 인덱스와 원소를 튜플로 묶어서 반환</li>
 </ul>
@@ -276,7 +276,7 @@
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span> i, num <span class="keyword">in</span> enumerate(l, start = <span class="number">100</span>):</span><br><span class="line">  print(i, num)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="number">100</span> <span class="number">1</span></span><br><span class="line">&gt;<span class="number">101</span> <span class="number">2</span></span><br><span class="line">&gt;<span class="number">102</span> <span class="number">3</span></span><br><span class="line">&gt;<span class="number">103</span> <span class="number">4</span></span><br></pre></td></tr></table></figure>
-<h2><span id="zip">zip()</span><a href="#zip" class="header-anchor">#</a></h2>
+<h2>zip()</h2>
 <ul>
 <li>여러개의 자료구조 객체를 받아 같은 인덱스 값끼리 튜플로 묶어서 반환</li>
 <li>반복할 때 마다 같은 인덱스의 값들을 묶어서 반환</li>
@@ -288,7 +288,7 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;(<span class="string">'id-1'</span>, <span class="number">20</span>, <span class="number">180</span>)</span><br><span class="line">&gt;(<span class="string">'id-2'</span>, <span class="number">25</span>, <span class="number">178</span>)</span><br><span class="line">&gt;(<span class="string">'id-3'</span>, <span class="number">30</span>, <span class="number">184</span>)</span><br><span class="line">&gt;(<span class="string">'id-4'</span>, <span class="number">28</span>, <span class="number">182</span>)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> id, age, tall <span class="keyword">in</span> zip(ids, ages, talls):</span><br><span class="line">  print(<span class="string">f'아이디:<span class="subst">&#123;id&#125;</span>, 나이:<span class="subst">&#123;age&#125;</span>, 키:<span class="subst">&#123;tall&#125;</span>'</span>)</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;아이디:id<span class="number">-1</span>, 나이:<span class="number">20</span>, 키:<span class="number">180</span></span><br><span class="line">&gt;아이디:id<span class="number">-2</span>, 나이:<span class="number">25</span>, 키:<span class="number">178</span></span><br><span class="line">&gt;아이디:id<span class="number">-3</span>, 나이:<span class="number">30</span>, 키:<span class="number">184</span></span><br><span class="line">&gt;아이디:id<span class="number">-4</span>, 나이:<span class="number">28</span>, 키:<span class="number">182</span></span><br></pre></td></tr></table></figure>
-<h1><span id="riseuteu-naepo-keompeurihensyeon">리스트 내포(컴프리헨션)</span><a href="#riseuteu-naepo-keompeurihensyeon" class="header-anchor">#</a></h1>
+<h1>리스트 내포(컴프리헨션)</h1>
 <hr>
 <ul>
 <li>기존 자료구조가 가진 원소들을 이용해 새로운 자료구조를 만드는 구문</li>
@@ -296,11 +296,11 @@
 <li><strong>튜플 컴프리헨션은 없다.</strong></li>
 <li>딕셔너리/집합 컴프리헨션은 파이썬 3.0부터 지원</li>
 </ul>
-<h2><span id="riseuteu-keompeurihensyeon">리스트 컴프리헨션</span><a href="#riseuteu-keompeurihensyeon" class="header-anchor">#</a></h2>
+<h2>리스트 컴프리헨션</h2>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># for문을 하나만 사용할 때</span></span><br><span class="line">[표현식 <span class="keyword">for</span> 항목 <span class="keyword">in</span> 반복가능객체 <span class="keyword">if</span> 조건문]</span><br><span class="line"><span class="comment"># for문을 두 개 이상 사용할 때</span></span><br><span class="line">[표현식 <span class="keyword">for</span> 항목<span class="number">1</span> <span class="keyword">in</span> 반복가능객체<span class="number">1</span> <span class="keyword">if</span> 조건문<span class="number">1</span></span><br><span class="line">       <span class="keyword">for</span> 항목<span class="number">2</span> <span class="keyword">in</span> 반복가능객체<span class="number">2</span> <span class="keyword">if</span> 조건문<span class="number">2</span></span><br><span class="line">       ...</span><br><span class="line">       <span class="keyword">for</span> 항목n <span class="keyword">in</span> 반복가능객체n <span class="keyword">if</span> 조건문n]</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">results = [num * <span class="number">10</span> <span class="keyword">for</span> num <span class="keyword">in</span> range(<span class="number">10</span>)]</span><br><span class="line">results</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;[<span class="number">0</span>, <span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>, <span class="number">60</span>, <span class="number">70</span>, <span class="number">80</span>, <span class="number">90</span>]</span><br></pre></td></tr></table></figure>
-<h2><span id="digsyeoneori-keompeurihensyeon">딕셔너리 컴프리헨션</span><a href="#digsyeoneori-keompeurihensyeon" class="header-anchor">#</a></h2>
+<h2>딕셔너리 컴프리헨션</h2>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">l = [<span class="number">0</span>, <span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span>, <span class="number">60</span>, <span class="number">70</span>, <span class="number">80</span>, <span class="number">90</span>]</span><br><span class="line">&#123;<span class="string">'key'</span>+str(i+<span class="number">1</span>):num+<span class="number">10</span> <span class="keyword">for</span> i, num <span class="keyword">in</span> enumerate(l)&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;</span><br><span class="line">&#123;<span class="string">'key1'</span>: <span class="number">10</span>,</span><br><span class="line"> <span class="string">'key2'</span>: <span class="number">20</span>,</span><br><span class="line"> <span class="string">'key3'</span>: <span class="number">30</span>,</span><br><span class="line"> <span class="string">'key4'</span>: <span class="number">40</span>,</span><br><span class="line"> <span class="string">'key5'</span>: <span class="number">50</span>,</span><br><span class="line"> <span class="string">'key6'</span>: <span class="number">60</span>,</span><br><span class="line"> <span class="string">'key7'</span>: <span class="number">70</span>,</span><br><span class="line"> <span class="string">'key8'</span>: <span class="number">80</span>,</span><br><span class="line"> <span class="string">'key9'</span>: <span class="number">90</span>,</span><br><span class="line"> <span class="string">'key10'</span>: <span class="number">100</span>&#125;</span><br></pre></td></tr></table></figure>
 
@@ -343,7 +343,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">for문 기본구조#</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">리스트와 for문#</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">튜플과 for문#</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">for문 응용#</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">for문과 continue#</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">for in 연관 내장함수#</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.1.</span> <span class="toc-nav-text">range()#</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.2.</span> <span class="toc-nav-text">enumerate()#</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.3.</span> <span class="toc-nav-text">zip()#</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">리스트 내포(컴프리헨션)#</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.1.</span> <span class="toc-nav-text">리스트 컴프리헨션#</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.2.</span> <span class="toc-nav-text">딕셔너리 컴프리헨션#</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">for문 기본구조</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">리스트와 for문</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">튜플과 for문</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">for문 응용</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">for문과 continue</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">for in 연관 내장함수</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.1.</span> <span class="toc-nav-text">range()</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.2.</span> <span class="toc-nav-text">enumerate()</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.3.</span> <span class="toc-nav-text">zip()</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">리스트 내포(컴프리헨션)</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.1.</span> <span class="toc-nav-text">리스트 컴프리헨션</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.2.</span> <span class="toc-nav-text">딕셔너리 컴프리헨션</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -371,11 +371,11 @@
                         
                           <a class="tag" href="/tags/#by_Mel" title="by_Mel">by_Mel</a>
                         
-                          <a class="tag" href="/tags/#python_for_in" title="python_for_in">python_for_in</a>
-                        
                           <a class="tag" href="/tags/#파이썬반복문" title="파이썬반복문">파이썬반복문</a>
                         
                           <a class="tag" href="/tags/#점프투파이썬" title="점프투파이썬">점프투파이썬</a>
+                        
+                          <a class="tag" href="/tags/#python_for_in" title="python_for_in">python_for_in</a>
                         
                     </div>
                 </section>
