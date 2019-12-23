@@ -93,11 +93,11 @@
                             
                               <a class="tag" href="/tags/#괴발개발" title="괴발개발">괴발개발</a>
                             
+                              <a class="tag" href="/tags/#python for문" title="python for문">python for문</a>
+                            
                               <a class="tag" href="/tags/#파이썬 알고리즘" title="파이썬 알고리즘">파이썬 알고리즘</a>
                             
                               <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
-                            
-                              <a class="tag" href="/tags/#python for문" title="python for문">python for문</a>
                             
                               <a class="tag" href="/tags/#백준알고리즘24438파이썬" title="백준알고리즘24438파이썬">백준알고리즘24438파이썬</a>
                             
@@ -225,13 +225,13 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h3>문제</h3>
+                <h3>문제1</h3>
 <p>첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제</p>
 <hr>
-<h3>입력</h3>
+<h3>입력1</h3>
 <p>첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.</p>
 <hr>
-<h3>출력</h3>
+<h3>출력1</h3>
 <p>첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.</p>
 <hr>
 <h3>예제 입력1</h3>
@@ -243,14 +243,38 @@
 <h3>풀이</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    print(i*<span class="string">"*"</span>)</span><br></pre></td></tr></table></figure>
 <hr>
+<h3>문제2</h3>
+<p>첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제</p>
+<p>하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.</p>
+<hr>
+<h3>입력2</h3>
+<p>첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.</p>
+<hr>
+<h3>출력2</h3>
+<p>첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.</p>
+<hr>
+<h3>예제 입력2</h3>
+<p>5</p>
+<hr>
+<h3>예제 출력2</h3>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">   **</span></span><br><span class="line"><span class="comment">  ***</span></span><br><span class="line"><span class="comment"> ****</span></span><br><span class="line"><span class="comment">*****</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3>풀이</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    print(<span class="string">" "</span>*(N-i)+<span class="string">"*"</span>*i)</span><br></pre></td></tr></table></figure>
+<hr>
 <h3>출처</h3>
-<p><a href="https://www.acmicpc.net/problem/2438" target="_blank" rel="noopener">백준 알고리즘</a></p>
+<p><a href="https://www.acmicpc.net/problem/2438" target="_blank" rel="noopener">백준 알고리즘2438</a><br>
+<a href="https://www.acmicpc.net/problem/2439" target="_blank" rel="noopener">백준 알고리즘2438</a></p>
 
                 
 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2019/12/23/1d1A-191223/" data-toggle="tooltip" data-placement="top" title="[Python] 백준알고리즘 10871">&larr; Previous Post</a>
+                        </li>
                     
                     
                         <li class="next">
@@ -281,7 +305,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">입력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">출력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">예제 입력1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">예제 출력1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">출처</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">입력1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">출력1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">예제 입력1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">예제 출력1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">문제2</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">입력2</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">출력2</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">10.</span> <span class="toc-nav-text">예제 입력2</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">11.</span> <span class="toc-nav-text">예제 출력2</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">12.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">13.</span> <span class="toc-nav-text">출처</span></a></li></ol>
         
         </div>
       </aside>
@@ -307,11 +331,11 @@
                         
                           <a class="tag" href="/tags/#괴발개발" title="괴발개발">괴발개발</a>
                         
+                          <a class="tag" href="/tags/#python for문" title="python for문">python for문</a>
+                        
                           <a class="tag" href="/tags/#파이썬 알고리즘" title="파이썬 알고리즘">파이썬 알고리즘</a>
                         
                           <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
-                        
-                          <a class="tag" href="/tags/#python for문" title="python for문">python for문</a>
                         
                           <a class="tag" href="/tags/#백준알고리즘24438파이썬" title="백준알고리즘24438파이썬">백준알고리즘24438파이썬</a>
                         

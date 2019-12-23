@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite-url/"/>
-  <updated>2019-12-22T09:36:59.947Z</updated>
+  <updated>2019-12-23T11:58:50.667Z</updated>
   <id>http://yoursite-url/</id>
   
   <author>
@@ -17,26 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[Python] 백준알고리즘 2438</title>
-    <link href="http://yoursite-url/2019/12/22/1d1A-191222-3/"/>
-    <id>http://yoursite-url/2019/12/22/1d1A-191222-3/</id>
-    <published>2019-12-22T09:32:05.000Z</published>
-    <updated>2019-12-22T09:36:59.947Z</updated>
+    <title>[Python] 백준알고리즘 10871</title>
+    <link href="http://yoursite-url/2019/12/23/1d1A-191223/"/>
+    <id>http://yoursite-url/2019/12/23/1d1A-191223/</id>
+    <published>2019-12-23T09:09:05.000Z</published>
+    <updated>2019-12-23T11:58:50.667Z</updated>
     
-    <content type="html"><![CDATA[<h3>문제</h3><p>첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제</p><hr><h3>입력</h3><p>첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.</p><hr><h3>출력</h3><p>첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.</p><hr><h3>예제 입력1</h3><p>5</p><hr><h3>예제 출력1</h3><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">**</span></span><br><span class="line"><span class="comment">***</span></span><br><span class="line"><span class="comment">****</span></span><br><span class="line"><span class="comment">*****</span></span><br></pre></td></tr></table></figure><hr><h3>풀이</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    print(i*<span class="string">"*"</span>)</span><br></pre></td></tr></table></figure><hr><h3>출처</h3><p><a href="https://www.acmicpc.net/problem/2438" target="_blank" rel="noopener">백준 알고리즘</a></p>]]></content>
+    <content type="html"><![CDATA[<h3>문제</h3><p>정수 N개로 이루어진 수열 A와 정수 X가 주어진다. 이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.</p><hr><h3>입력</h3><p>첫째 줄에 N과 X가 주어진다. (1 ≤ N, X ≤ 10,000)</p><p>둘째 줄에 수열 A를 이루는 정수 N개가 주어진다. 주어지는 정수는 모두 1보다 크거나 같고, 10,000보다 작거나 같은 정수이다.</p><hr><h3>출력</h3><p>X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. X보다 작은 수는 적어도 하나 존재한다.</p><hr><h3>예제 입력</h3><p>10 5<br>1 10 4 9 2 3 8 5 7 6</p><hr><h3>예제 출력</h3><p>1 4 2 3</p><hr><h3>풀이</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">N, X = map(int, input().split(<span class="string">" "</span>))</span><br><span class="line">A = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> A:</span><br><span class="line">    <span class="keyword">if</span> i &lt; X:</span><br><span class="line">        print(i, end = <span class="string">' '</span>)</span><br></pre></td></tr></table></figure><hr><h3>출처</h3><p><a href="https://www.acmicpc.net/problem/10871" target="_blank" rel="noopener">백준 알고리즘 10871</a></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h3&gt;문제&lt;/h3&gt;
-&lt;p&gt;첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제&lt;/p&gt;
+&lt;p&gt;정수 N개로 이루어진 수열 A와 정수 X가 주어진다. 이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;입력&lt;/h3&gt;
-&lt;p&gt;첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3&gt;출력&lt;/h3&gt;
-&lt;p&gt;첫째 
+&lt;p&gt;첫째 줄에 N과 X가 주어진다. (1 ≤ N, X ≤ 10
       
     
     </summary>
@@ -51,11 +48,56 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
+      <category term="백준알고리즘10871파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9810871%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Python] 백준알고리즘 2438</title>
+    <link href="http://yoursite-url/2019/12/22/1d1A-191222-3/"/>
+    <id>http://yoursite-url/2019/12/22/1d1A-191222-3/</id>
+    <published>2019-12-22T09:32:05.000Z</published>
+    <updated>2019-12-22T10:59:58.101Z</updated>
+    
+    <content type="html"><![CDATA[<h3>문제1</h3><p>첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제</p><hr><h3>입력1</h3><p>첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.</p><hr><h3>출력1</h3><p>첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.</p><hr><h3>예제 입력1</h3><p>5</p><hr><h3>예제 출력1</h3><figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">**</span></span><br><span class="line"><span class="comment">***</span></span><br><span class="line"><span class="comment">****</span></span><br><span class="line"><span class="comment">*****</span></span><br></pre></td></tr></table></figure><hr><h3>풀이</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    print(i*<span class="string">"*"</span>)</span><br></pre></td></tr></table></figure><hr><h3>문제2</h3><p>첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제</p><p>하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.</p><hr><h3>입력2</h3><p>첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.</p><hr><h3>출력2</h3><p>첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.</p><hr><h3>예제 입력2</h3><p>5</p><hr><h3>예제 출력2</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">   **</span></span><br><span class="line"><span class="comment">  ***</span></span><br><span class="line"><span class="comment"> ****</span></span><br><span class="line"><span class="comment">*****</span></span><br></pre></td></tr></table></figure><hr><h3>풀이</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    print(<span class="string">" "</span>*(N-i)+<span class="string">"*"</span>*i)</span><br></pre></td></tr></table></figure><hr><h3>출처</h3><p><a href="https://www.acmicpc.net/problem/2438" target="_blank" rel="noopener">백준 알고리즘2438</a><br><a href="https://www.acmicpc.net/problem/2439" target="_blank" rel="noopener">백준 알고리즘2438</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3&gt;문제1&lt;/h3&gt;
+&lt;p&gt;첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;입력1&lt;/h3&gt;
+&lt;p&gt;첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;출력1&lt;/h3&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="알고리즘 문제풀이" scheme="http://yoursite-url/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/"/>
+    
+    
+      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
+    
+      <category term="인문학도개발일지" scheme="http://yoursite-url/tags/%EC%9D%B8%EB%AC%B8%ED%95%99%EB%8F%84%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    
+      <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
+    
       <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
+      <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
       <category term="백준알고리즘24438파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9824438%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -96,11 +138,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘11022파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9811022%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -139,11 +181,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘11021파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9811021%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -183,11 +225,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘2742파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%982742%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -226,11 +268,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘2741파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%982741%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -270,11 +312,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘15552파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9815552%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -315,11 +357,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘8393파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%988393%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -358,11 +400,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
+      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
+    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘10950파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9810950%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -400,13 +442,13 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
-      <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
-    
-      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
       <category term="python for문" scheme="http://yoursite-url/tags/python-for%EB%AC%B8/"/>
     
       <category term="백준알고리즘2739파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%982739%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
+    
+      <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
+    
+      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
     
   </entry>
   
@@ -442,13 +484,13 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
-      <category term="python if문" scheme="http://yoursite-url/tags/python-if%EB%AC%B8/"/>
-    
-      <category term="백준알고리즘10817파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9810817%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
-    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="python if문" scheme="http://yoursite-url/tags/python-if%EB%AC%B8/"/>
+    
+      <category term="백준알고리즘10817파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%9810817%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
   </entry>
   
@@ -482,11 +524,11 @@
     
       <category term="괴발개발" scheme="http://yoursite-url/tags/%EA%B4%B4%EB%B0%9C%EA%B0%9C%EB%B0%9C/"/>
     
-      <category term="python if문" scheme="http://yoursite-url/tags/python-if%EB%AC%B8/"/>
-    
       <category term="파이썬 알고리즘" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"/>
     
       <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
+    
+      <category term="python if문" scheme="http://yoursite-url/tags/python-if%EB%AC%B8/"/>
     
       <category term="백준알고리즘 2884 파이썬" scheme="http://yoursite-url/tags/%EB%B0%B1%EC%A4%80%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-2884-%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
     
@@ -532,9 +574,9 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
-    
       <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
     
       <category term="rurple" scheme="http://yoursite-url/tags/rurple/"/>
     
@@ -618,9 +660,9 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
-    
       <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
     
       <category term="pandas" scheme="http://yoursite-url/tags/pandas/"/>
     
@@ -664,11 +706,11 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
-    
       <category term="women_who_code" scheme="http://yoursite-url/tags/women-who-code/"/>
     
       <category term="google analytics" scheme="http://yoursite-url/tags/google-analytics/"/>
+    
+      <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
     
   </entry>
   
@@ -711,9 +753,9 @@
     
       <category term="python" scheme="http://yoursite-url/tags/python/"/>
     
-      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
-    
       <category term="hexo_blog" scheme="http://yoursite-url/tags/hexo-blog/"/>
+    
+      <category term="numpy" scheme="http://yoursite-url/tags/numpy/"/>
     
   </entry>
   
@@ -837,49 +879,6 @@
       <category term="파이썬반복문" scheme="http://yoursite-url/tags/%ED%8C%8C%EC%9D%B4%EC%8D%AC%EB%B0%98%EB%B3%B5%EB%AC%B8/"/>
     
       <category term="점프투파이썬" scheme="http://yoursite-url/tags/%EC%A0%90%ED%94%84%ED%88%AC%ED%8C%8C%EC%9D%B4%EC%8D%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[웹 크롤링] Requests</title>
-    <link href="http://yoursite-url/2019/11/02/TIL-by-Mel/"/>
-    <id>http://yoursite-url/2019/11/02/TIL-by-Mel/</id>
-    <published>2019-11-02T04:34:04.000Z</published>
-    <updated>2019-11-25T11:33:11.910Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>from 2019/10/31</p><p>웹 크롤링 정리 중</p></blockquote><h1>URL</h1><hr><ul><li>URL(Uniform Resource Locator)<ul><li>URL의 구성요소<ul><li>스키마(schema): 통신 방식</li><li>호스트(host): 서버 주소</li><li>패스(path): 서버에서 문서의 위치</li><li>쿼리(query): 문서에 전달하는 추가 정보</li></ul></li></ul></li><li>URL 예</li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://search.naver.com:80/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=scraping</span><br></pre></td></tr></table></figure><ul><li>스키마(scheme): https://</li><li>호스트(host): <a href="http://search.naver.com" target="_blank" rel="noopener">search.naver.com</a></li><li>포트번호(port): 80. 웹브라우저들은 port 번호 생략시 80으로 전송된다.</li><li>자원경로(path): search.naver</li><li>쿼리스트링(query): ?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=scraping</li></ul><h1>urllib 모듈 - url 분석</h1><hr><ul><li>urlib<ul><li>url과 관련된 다양한 기능을 제공하는 파이썬 내장 모듈</li><li>url 경로 합치기</li><li>url 구문 분석</li><li>url의 자원(페이지) 요청</li></ul></li><li>url 분석</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line">url = <span class="string">'https://search.naver.com:80/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=scraping'</span></span><br><span class="line">p = parse.urlparse(url)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 스키마</span></span><br><span class="line">p.scheme</span><br><span class="line"><span class="comment"># 호스트</span></span><br><span class="line">p.hostname</span><br><span class="line"><span class="comment"># 포트번호</span></span><br><span class="line"><span class="comment"># G: url에 없으면 안 나온다.</span></span><br><span class="line">p.port</span><br><span class="line"><span class="comment"># 패스(자원경로)</span></span><br><span class="line">p.path</span><br><span class="line"><span class="comment"># 쿼리</span></span><br><span class="line">p.query</span><br></pre></td></tr></table></figure><h1>URL 합치기</h1><hr><ul><li>parse.urljoin(base, url)<ul><li>host는 동일하고 path 이후가 바뀌는 경우; 같은 사이트의 다른 자원을 조회할 때 유용</li><li>중복되는 url을 base url로 지정하고 바뀌는 부분만 붙이면 편리</li><li><code>base</code>+<code>/</code>+<code>url</code>형태로 합쳐준다.</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line">base_url = <span class="string">'http://main.com'</span></span><br><span class="line">path1 = <span class="string">'/news/it.html'</span></span><br><span class="line">path2 = <span class="string">'/news/sports.html'</span></span><br><span class="line">path3 = <span class="string">'/shopping/cloth.html'</span></span><br><span class="line">print(parse.urljoin(base_url, path1))</span><br><span class="line">print(parse.urljoin(base_url, path2))</span><br><span class="line">print(parse.urljoin(base_url, path3))</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">path = [path1, path2, path3]</span><br><span class="line"><span class="keyword">for</span> p <span class="keyword">in</span> path:</span><br><span class="line">    url = parse.urljoin(base_url, p)</span><br><span class="line">    print(url, <span class="string">'요청'</span>)</span><br></pre></td></tr></table></figure><h1>Requests 모듈</h1><hr><ul><li>HTTP 요청을 처리하는 파이썬 패키지</li><li>쿠키, 헤더정보 등 HTTP의 다양한 요청처리 지원</li><li>get, host 방식 모두 지원</li><li>내장 라이브러리 X, 별도의 설치 필요</li><li>아래 둘 중 하나를 아나콘다 프롬프트에 입력</li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install requests2</span><br><span class="line">conda install -c conda-forge requests</span><br></pre></td></tr></table></figure><h1>요청 파라미터 전달</h1><hr><ul><li>요청파라미터란?<ul><li>서버가 일하기 위해 클라이언트로 부터 받아야하는 값들</li><li>name=value 형태이며 여러개일 경우 &amp;로 연결해서 전송됨</li></ul></li><li>Get 요청시 queryString 으로 전달<ul><li>querystring : URL 뒤에 붙여서 전송한다.</li><li>ex) <a href="https://search.naver.com/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=python" target="_blank" rel="noopener">https://search.naver.com/search.naver?sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=python</a></li><li>requests.get() 요청시<ul><li>url 뒤에 querystring으로 붙여서 전송</li><li>dictionary 에 name=value 형태로 만들어 매개변수 params에 전달</li></ul></li></ul></li><li>Post 요청시 요청정보의 body에 넣어 전달</li><li>HTTP 요청 헤더(Request Header)<ul><li>HTTP 요청시 웹브라우저가 client의 여러 부가적인 정보들을 Key-Value 쌍 형식으로 전달한다.<ul><li>accept: 클라이언트가 처리가능한 content 타입 (Mime-type 형식으로 전달)</li><li>accept-language: 클라이언트가 지원하는 언어(ex: ko, en-US)</li><li>host: 요청한 host</li><li>user-agent: 웹브라우저 종류</li></ul></li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.pythonscraping.com/pages/warandpeace.html'</span></span><br><span class="line"></span><br><span class="line">res = requests.get(url)</span><br><span class="line">print(res.status_code)</span><br><span class="line"><span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">  print(res.text)</span><br></pre></td></tr></table></figure><h1>요청함수</h1><hr><ul><li>http 프로토콜은 왜 요청하느냐에 따라 요청 방법을 여러가지 만들어둠<ul><li>요청방식 두 가지: get(목적: sql의 select), post(목적: sql의 insert)</li></ul></li><li><code>requests.get(URL)</code><ul><li>주요 매개변수<ul><li>params: 요청파라미터를 dictionary나 tuple로 전달</li><li>headers: HTTP 요청 header를 dictionary로 전달<ul><li>‘User-Agent’, ‘Referer’ 헤더 설정</li></ul></li><li>cookies: 쿠키정보를 전달</li></ul></li><li>응답 결과를 Response 객체에 담아 반환<ul><li>Response의 속성을 이용해 응답결과를 조회</li><li>status_code: HTTP 응답 상태코드</li><li>text: 응답내용(HTML)</li><li>content: 응답내용(응답결과가 binary 일 경우 - image, 동영상등)</li></ul></li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line"></span><br><span class="line">base_url = <span class="string">'http://httpbin.org'</span></span><br><span class="line">url = parse.urljoin(base_url, <span class="string">'get'</span>)</span><br><span class="line">print(url)</span><br><span class="line"></span><br><span class="line"><span class="comment">#요청 header 값 추가 및 변경. dictionary key: 헤더명, value: 헤더값</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>:<span class="string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'</span>,</span><br><span class="line">    <span class="string">'my-header'</span>:<span class="string">'test'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 요청파라미터 : GET- 1. url뒤에 queryString 붙여서 전송.</span></span><br><span class="line"><span class="comment">#                 2. params 매개변수에 dictionary로 넣어 설정.</span></span><br><span class="line"><span class="comment"># url = url+"?id=test-id&amp;password=11111"</span></span><br><span class="line"><span class="comment"># print(url)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#2.</span></span><br><span class="line">params = dict(id = <span class="string">'test-id2'</span>, password=<span class="string">'2345'</span>)</span><br><span class="line">params = [(<span class="string">'name'</span>, <span class="string">'홍길동'</span>), (<span class="string">'name'</span>, <span class="string">'이순신'</span>), (<span class="string">'name'</span>, <span class="string">'유관순'</span>)]</span><br><span class="line"></span><br><span class="line">res = requests.get(url, headers=headers, params=params)</span><br><span class="line"><span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">    res_text = res.text</span><br><span class="line">    print(res_text)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"요청페이지를 못 가져옴."</span>, res.status_code)</span><br></pre></td></tr></table></figure><ul><li><code>requests.post(URL)</code><ul><li>크롤링시 많이 사용하지는 않는다.</li><li><strong>POST 방식 요청</strong></li><li>주요 매개변수<ul><li>datas : 요청파라미터를 dictionary나 tuple로 전달</li><li>headers: Get방식과 동일</li><li>cookies: Get방식과 동일</li></ul></li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line"></span><br><span class="line">base_url = <span class="string">'http://httpbin.org'</span></span><br><span class="line">url = parse.urljoin(base_url, <span class="string">'post'</span>)</span><br><span class="line">print(url)</span><br><span class="line"></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>:<span class="string">'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'</span>,</span><br><span class="line">    <span class="string">'my-header'</span>:<span class="string">'test'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># POST 요청파라미터 : datas 매개변수에 dictionary나 리스트로 전달. (querystring은 사용안함.)</span></span><br><span class="line"><span class="comment"># 매개변수 param X, data O</span></span><br><span class="line"></span><br><span class="line">datas = &#123;<span class="string">"id"</span>:<span class="string">"my-id"</span>, <span class="string">"pwd"</span>:<span class="string">'1111'</span>, <span class="string">"age"</span>:[<span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>]&#125;</span><br><span class="line">res = requests.post(url, headers=headers, data=datas)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">    res_text = res.text</span><br><span class="line">    print(res_text)</span><br><span class="line"></span><br><span class="line"><span class="comment"># user agent : 웹브라우저 상태를 보고 뭔가 처리가 안 될 경우 응답 결과의 user agent를 확인</span></span><br></pre></td></tr></table></figure><h1>HTTP 요청정보 구조</h1><hr><table><thead><tr><th style="text-align:center">구분자</th><th style="text-align:center">내용</th></tr></thead><tbody><tr><td style="text-align:center"><strong>요청라인</strong></td><td style="text-align:center">url</td></tr><tr><td style="text-align:center"><strong>header</strong></td><td style="text-align:center">클라이언트 웹브라우저 {name:value}</td></tr><tr><td style="text-align:center"><strong>body</strong></td><td style="text-align:center">post일 때는 요청 파라미터, get 방식일 대는 아무것도 없다. cf. get 방식일 때는 url 뒤에 요청파라미터 (ex. url?get방식 요청파라미터)</td></tr></tbody></table><h1>HTTP 응답정보</h1><hr><table><thead><tr><th style="text-align:center">구분자</th><th style="text-align:center">내용</th></tr></thead><tbody><tr><td style="text-align:center"><strong>응답라인</strong></td><td style="text-align:center">응답상태 코드</td></tr><tr><td style="text-align:center"><strong>header</strong></td><td style="text-align:center">응답하는 서버, 데이터 양식, 상태 등등 정보</td></tr><tr><td style="text-align:center"><strong>body</strong></td><td style="text-align:center">응답 내용, html, binary image, video 등…</td></tr></tbody></table><h1>JSON(JavaScript Object Notation)</h1><hr><ul><li>key-value 형태 또는 배열 형태의 text</li><li>다른 기종간 데이터 교환에 많이 이용</li><li>object와 array를 생성하는 문법을 이용해 만듦</li><li>JSON 모듈 : JSON 형식 문자열을 다루는 모듈<ul><li>loads(json문자열): JSON 형식 문자열을 dictionary/list로 변환</li><li>dumps(dictionary): dictionary를 JSON 형식 문자열로 변환</li></ul></li></ul><h1>Dumps : dictionary를 json 형식으로</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line">d = &#123;<span class="string">'n1'</span>:<span class="string">'value'</span>, <span class="string">'n2'</span>:<span class="number">20</span>, <span class="string">'n3'</span>:<span class="literal">None</span>, <span class="string">'n4'</span>:<span class="literal">True</span>&#125;</span><br><span class="line"><span class="comment"># dictionary -&gt; json 문자열</span></span><br><span class="line">j_s = json.dumps(d)</span><br><span class="line">print(type(j_s), j_S)</span><br><span class="line"> <span class="comment"># 자바스크립트 기법으로 바뀐다. None -&gt; null, True -&gt; ture</span></span><br><span class="line"><span class="comment"># 키값이 문자열인 것을 확인할 수 있다. - &gt; j_s['n1'] 조회 불가, 딕셔너리 형태지만 딕셔너리가 아니니까!</span></span><br></pre></td></tr></table></figure><h1>Loads : json 형식 문자열을 dictionary/list로</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d2 = json.loads(j_s)</span><br><span class="line">print(d2)</span><br><span class="line">d2[<span class="string">'n1'</span>], d2[<span class="string">'n2]</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span><br><span class="line">base_url = <span class="string">'http://httpbin.org'</span>   </span><br><span class="line">url = parse.urljoin(base_url, <span class="string">'post'</span>)    <span class="comment"># 반복문 활용시 post, get 병용할 때 활용</span></span><br><span class="line">print(url)</span><br><span class="line"></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>:<span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'</span>,</span><br><span class="line">    <span class="string">'my-header'</span>:<span class="string">'test'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Post 요청 파라미터 : data 매개변수에 dictionary나 리스트로 전달.</span></span><br><span class="line"><span class="comment">#                    (queryStirng은 사용 안 함.)</span></span><br><span class="line"><span class="comment"># 매개변수 param X, data O</span></span><br><span class="line"></span><br><span class="line">datas = &#123;<span class="string">"id"</span>:<span class="string">"my-id"</span>, <span class="string">"pwd"</span>:<span class="string">'1111'</span>, <span class="string">"ages"</span>:[<span class="number">20</span>, <span class="number">30</span>, <span class="number">50</span>]&#125;</span><br><span class="line">res = requests.post(url, headers=headers, data=datas)    </span><br><span class="line"><span class="comment"># 요청파라미터를 datas로 받아온다는 점이 get과 다르다.</span></span><br><span class="line"><span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">    res_text = res.text</span><br><span class="line">    print(res_text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">    res_text = res_text</span><br><span class="line">    res_dict = res.json() </span><br><span class="line">    <span class="comment"># 제이슨으로 변환해서 처리해주므로 굳이 load를 하지 않아도 됨</span></span><br><span class="line">    print(type(res_text), type(res_dict))</span><br><span class="line">    print(res_dict[<span class="string">'headers'</span>])</span><br><span class="line">    print(<span class="string">"----------------"</span>)</span><br><span class="line">    print(res_dict[<span class="string">'headers'</span>][<span class="string">'Accept'</span>])</span><br></pre></td></tr></table></figure><h1>응답결과(Response) 조회</h1><ul><li>HTTP 응답 상태코드<ul><li>2XX: 성공<ul><li>200: OK</li></ul></li><li>3XX: 다른 주소로 이동 (이사)<ul><li>300번대이면 자동으로 이동해 준다. 크롤링시는 볼일이 별로 없다.</li></ul></li><li>4XX: 클라이언트 오류 (사용자가 잘못한 것)<ul><li>404: 존재하지 않는 주소</li></ul></li><li>5XX: 서버 오류 (서버에서 문제생긴 것)<ul><li>500: 서버가 처리방법을 모르는 오류</li><li>503: 서버가 다운 등의 문제로 서비스 불가 상태</li></ul></li></ul></li></ul><h1>예제</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 'url'에 접속하는 코드</span></span><br><span class="line"><span class="comment"># 초록색으로 된 단어들만 추출</span></span><br><span class="line"><span class="comment"># ToDo: 사이트 접근, 사이트 분석(크롤링할 대상, 가져올 데이터, 가져오려면 어떻게?=&gt; 개발자 도구 활용)</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.pythonscraping.com/pages/warandpeace.html'</span> </span><br><span class="line"><span class="comment"># 주소 넣어서 Enter 치면 나온다 -&gt; 요청 파라미터 없다는 것을 의미</span></span><br><span class="line"><span class="comment"># 요청파라미터 : 서버가 일하기 위해 클라이언트로 부터 받아야하는 값들</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 요청 </span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 응답코드</span></span><br><span class="line">print(req.status_code)    <span class="comment"># 200이 나오면 정상</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 응답이 정상이면 응답 HTML을 읽어서 변수로 저장.</span></span><br><span class="line"><span class="keyword">if</span> req.status_code == <span class="number">200</span>:</span><br><span class="line">    req.text = req.text</span><br><span class="line"><span class="comment"># 위 응답이 정상이라면 응답 html 중 초록 단어들만 가져온다.</span></span><br><span class="line"><span class="comment"># &lt;span class = 'green'&gt;</span></span><br><span class="line"><span class="comment">## find를 쓸 경우</span></span><br><span class="line">soup = BeautifulSoup(req.text, <span class="string">'lxml'</span>)</span><br><span class="line">green_tag = soup.find_all(<span class="string">'span'</span>, attrs=&#123;<span class="string">'class'</span>:<span class="string">'green'</span>&#125;)</span><br><span class="line">green_content_list = []</span><br><span class="line"><span class="keyword">for</span> tag <span class="keyword">in</span> green_tags:</span><br><span class="line">    green_contents_list.append(tag.get_text().replace(<span class="string">'\n'</span>, <span class="string">' '</span>).strip())</span><br><span class="line"><span class="comment"># tag.get_text 값을 contet_list에 append</span></span><br><span class="line"><span class="comment"># replace('\n', ' ') : 엔터값을 공백으로 대체</span></span><br><span class="line"><span class="comment"># strip() : 좌우공백 없애기</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## select를 쓸 경우</span></span><br><span class="line"><span class="comment"># 빨간색 문장들을 조회 - &lt;span class = 'red&gt;</span></span><br><span class="line">red_tags = soup.select(<span class="string">'span.red'</span>)</span><br><span class="line">red_content_list = []</span><br><span class="line"><span class="keyword">for</span> tag <span class="keyword">in</span> red_tags:</span><br><span class="line">    red_content_list.append(tag.get_text().strip())</span><br><span class="line"></span><br><span class="line">print(len(green_content_list), len(red_content_list))</span><br></pre></td></tr></table></figure><h1>Pickle로 파이썬 객체를 그대로 파일에 저장</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'green_list.pkl'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pickle.dump(green_content_list, f)</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'red_list.pkl'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    pickle.dump(red_cotent_list, f)</span><br><span class="line"><span class="comment"># 읽어올 때</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'green_list.pkl'</span>, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    green_list = pickle.load(f)</span><br><span class="line">green_list[:<span class="number">3</span>]   <span class="comment"># 세 개만 출력</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;from 2019/10/31&lt;/p&gt;
-&lt;p&gt;웹 크롤링 정리 중&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;URL&lt;/h1&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;URL(Uniform Resource Locator)
-&lt;ul&gt;
-&lt;li&gt;URL의 구
-      
-    
-    </summary>
-    
-    
-      <category term="Web Crawling" scheme="http://yoursite-url/categories/Web-Crawling/"/>
-    
-    
-      <category term="TIL" scheme="http://yoursite-url/tags/TIL/"/>
-    
-      <category term="Today_I_Learned_by_Mel" scheme="http://yoursite-url/tags/Today-I-Learned-by-Mel/"/>
-    
-      <category term="python" scheme="http://yoursite-url/tags/python/"/>
-    
-      <category term="webcrawling" scheme="http://yoursite-url/tags/webcrawling/"/>
-    
-      <category term="주피터노트북" scheme="http://yoursite-url/tags/%EC%A3%BC%ED%94%BC%ED%84%B0%EB%85%B8%ED%8A%B8%EB%B6%81/"/>
     
   </entry>
   

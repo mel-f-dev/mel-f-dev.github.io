@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Python] 백준알고리즘 2742 - TIL by Mel
+          [Python] 백준알고리즘 10871 - TIL by Mel
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2019/12/22/1d1A-191222/">
+    <link rel="canonical" href="http://yoursite-url/2019/12/23/1d1A-191223/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -99,14 +99,14 @@
                             
                               <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
                             
-                              <a class="tag" href="/tags/#백준알고리즘2742파이썬" title="백준알고리즘2742파이썬">백준알고리즘2742파이썬</a>
+                              <a class="tag" href="/tags/#백준알고리즘10871파이썬" title="백준알고리즘10871파이썬">백준알고리즘10871파이썬</a>
                             
                         </div>
-                        <h1>[Python] 백준알고리즘 2742</h1>
+                        <h1>[Python] 백준알고리즘 10871</h1>
                         <h2 class="subheading">단계별로 풀어보기-for문</h2>
                         <span class="meta">
                             Posted by Mel on
-                            2019-12-22
+                            2019-12-23
                         </span>
                     </div>
                 
@@ -224,19 +224,27 @@
                 post-container">
 
                 <h3>문제</h3>
-<p>자연수 N이 주어졌을 때, N부터 1까지 한 줄에 하나씩 출력하는 프로그램을 작성하시오.</p>
+<p>정수 N개로 이루어진 수열 A와 정수 X가 주어진다. 이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.</p>
 <hr>
 <h3>입력</h3>
-<p>첫째 줄에 100,000보다 작거나 같은 자연수 N이 주어진다.</p>
+<p>첫째 줄에 N과 X가 주어진다. (1 ≤ N, X ≤ 10,000)</p>
+<p>둘째 줄에 수열 A를 이루는 정수 N개가 주어진다. 주어지는 정수는 모두 1보다 크거나 같고, 10,000보다 작거나 같은 정수이다.</p>
 <hr>
 <h3>출력</h3>
-<p>첫째 줄부터 N번째 줄 까지 차례대로 출력한다.</p>
+<p>X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. X보다 작은 수는 적어도 하나 존재한다.</p>
+<hr>
+<h3>예제 입력</h3>
+<p>10 5<br>
+1 10 4 9 2 3 8 5 7 6</p>
+<hr>
+<h3>예제 출력</h3>
+<p>1 4 2 3</p>
 <hr>
 <h3>풀이</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">N = int(input().strip())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(N, <span class="number">0</span>, <span class="number">-1</span>):</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">N, X = map(int, input().split(<span class="string">" "</span>))</span><br><span class="line">A = list(map(int, input().split(<span class="string">" "</span>)))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> A:</span><br><span class="line">    <span class="keyword">if</span> i &lt; X:</span><br><span class="line">        print(i, end = <span class="string">' '</span>)</span><br></pre></td></tr></table></figure>
 <hr>
 <h3>출처</h3>
-<p><a href="https://www.acmicpc.net/problem/2742" target="_blank" rel="noopener">백준 알고리즘</a></p>
+<p><a href="https://www.acmicpc.net/problem/10871" target="_blank" rel="noopener">백준 알고리즘 10871</a></p>
 
                 
 
@@ -244,13 +252,9 @@
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2019/12/22/1d1A-191222-1/" data-toggle="tooltip" data-placement="top" title="[Python] 백준알고리즘 11021">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/2019/12/21/1d1A-20191221/" data-toggle="tooltip" data-placement="top" title="[Python] 백준알고리즘 2741">Next Post &rarr;</a>
+                            <a href="/2019/12/22/1d1A-191222-3/" data-toggle="tooltip" data-placement="top" title="[Python] 백준알고리즘 2438">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -277,7 +281,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">입력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">출력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">출처</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">입력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">출력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">예제 입력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">예제 출력</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">풀이</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">출처</span></a></li></ol>
         
         </div>
       </aside>
@@ -309,7 +313,7 @@
                         
                           <a class="tag" href="/tags/#Today_I_Learned_by_Mel" title="Today_I_Learned_by_Mel">Today_I_Learned_by_Mel</a>
                         
-                          <a class="tag" href="/tags/#백준알고리즘2742파이썬" title="백준알고리즘2742파이썬">백준알고리즘2742파이썬</a>
+                          <a class="tag" href="/tags/#백준알고리즘10871파이썬" title="백준알고리즘10871파이썬">백준알고리즘10871파이썬</a>
                         
                     </div>
                 </section>
